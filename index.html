@@ -302,9 +302,8 @@
 		<script src="plugins.js"></script>
 		<script src="app.js"></script>
 		<script> 
-		$(document).ready(function(){
-    			$('html').animate({scrollTop:0}, 1);
-    			$('body').animate({scrollTop:0}, 1);
+		$(window).on('beforeunload', function() {
+   			$(window).scrollTop(0);
 		}); 
 		</script>
 	</body>
