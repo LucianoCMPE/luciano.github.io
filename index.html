@@ -293,7 +293,7 @@
 						</div>
 					</div>
 
-		                       <p class="colophon">For more info contact me on <a href ="https://www.twitter.com/Luciano___98">twitter</a></p>
+		                       <p class="colophon">For more info contact me on <a href ="https://www.twitter.com/Luciano___98" target="_blank">twitter</a></p>
 				</div>
 			</footer> <!-- .site-footer -->
 		</div>
@@ -301,10 +301,9 @@
 		<script src="js/jquery-1.11.1.min.js"></script>
 		<script src="js/plugins.js"></script>
 		<script src="js/app.js"></script>
-		<script> $(document).ready(function(){
-    				$('html').animate({scrollTop:0}, 1);
-    				$('body').animate({scrollTop:0}, 1);
-			}); </script>
+		<script> $(window).on('beforeunload', function() {
+   					$(window).scrollTop(0);
+				}); </script>
 	</body>
 
 </html>
