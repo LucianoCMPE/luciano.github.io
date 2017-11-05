@@ -24,14 +24,7 @@
 	
 
 	<body>
-		<body onload="init()"> // Set up the initial JavaScript function, as shown in the JavaScript code.
-		<div id="main">
-		<div id="updateMe">
-		<h2>Truly Code's Favourite Number is:</h2>
-		<h1 id="trulyCodesFavouriteNumber"></h1>
-		</div>
-		</div>
-		</body>
+		
 		<div class="site-content">
 			<div class="site-header">
 				<div class="container">
@@ -77,6 +70,7 @@
 							<div class="forecast-header">
 								<div class="day">Today's High</div>
 								<div class="date">Oct 23</div>
+										
 							</div> <!-- .forecast-header -->
 							<div class="forecast-content">
 								<div class="location">Baltimore</div>
@@ -314,25 +308,7 @@
    			$(window).scrollTop(0);
 		}); 
 		</script>
-		<script type="text/javascript">
-		function refresh()
-		{
-		var req = new XMLHttpRequest();
-		console.log("Grabbing Value");
-		req.onreadystatechange=function() {
-		if (req.readyState==4 && req.status==200) {
-		document.getElementById('trulyCodesFavouriteNumber').innerText = req.responseText;
-		}
-		}
-		req.open("GET", 'reload.txt', true); // Grabs whatever you've written in this file
-		req.send(null);
-		}
-		function init() // This is the function the browser first runs when it's loaded.
-		{
-		refresh() // Then runs the refresh function for the first time.
-		var int=self.setInterval(function(){refresh()},10000); // Set the refresh() function to run every 10 seconds. [1 second would be 1000, and 1/10th of a second would be 100 etc.
-		}	
-</script>
+		
 	</body>
 
 </html>
