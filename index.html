@@ -70,10 +70,12 @@
 							<div class="forecast-header">
 								<div class="day">Today's High</div>
 								<div class="date">
-								<script type="text/javascript">
-								var theDate=new Date()
-								document.write(theDate.getFullYear())
-								</script>
+								var monthNames = ["January", "February", "March", "April", "May", "June",
+ 								 "July", "August", "September", "October", "November", "December"
+								];
+
+								var d = new Date();
+								document.write("The current month is " + monthNames[d.getMonth()]);
 								</div>
 										
 							</div> <!-- .forecast-header -->
