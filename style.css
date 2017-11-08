@@ -1184,10 +1184,10 @@ form textarea {
 .mobile-navigation {
   padding: 30px 0 0;
   clear: both;
-  display: inline; }
+  display: none; }
   @media screen and (min-width: 991px) {
     .mobile-navigation {
-      display: none !important; } }
+      display: inline; } }
   .mobile-navigation .menu {
     background: #262936;
     list-style: none;
