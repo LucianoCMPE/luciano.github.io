@@ -1677,4 +1677,5 @@ form textarea {
 
     .bannerz {
       background:url("Test/Baltimore-sunset-pano.jpg");
+      background-repeat: no-repeat;
       background-size: cover; }
