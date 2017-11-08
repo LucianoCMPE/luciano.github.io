@@ -1193,7 +1193,7 @@ form textarea {
     list-style: none;
     text-align: center;
     border-radius: 10px;
-    overflow: hidden; }
+    overflow: visible; }
     .mobile-navigation .menu a {
       padding: 20px;
       display: block;
@@ -1676,5 +1676,5 @@ form textarea {
       color: white; }
 
     .bannerz {
-      background-image:url("../Test/Baltimore-sunset-pano.jpg");
+      background:url("Test/Baltimore-sunset-pano.jpg");
       background-size: cover; }
