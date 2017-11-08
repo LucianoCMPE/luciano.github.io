@@ -1676,5 +1676,5 @@ form textarea {
       color: white; }
 
     .bannerz {
-      background-image:url('Test/Baltimore-sunset-pano.jpg');
+      background-image:url("../Test/Baltimore-sunset-pano.jpg");
       background-size: cover; }
