@@ -1187,7 +1187,7 @@ form textarea {
   display: none; }
   @media screen and (min-width: 991px) {
     .mobile-navigation {
-      display: inline; } }
+      display: none !important; } }
   .mobile-navigation .menu {
     background: #262936;
     list-style: none;
