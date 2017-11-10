@@ -1287,7 +1287,9 @@ form textarea {
       background: rgba(0, 0, 0, 0.1);
       padding: 10px;
       text-align: center;
-      font-weight: 400; }
+      font-weight: 400; 
+ height: 40px;
+}
     .forecast-container .forecast .forecast-icon {
       height: 50px; }
     .forecast-container .forecast .forecast-content {
