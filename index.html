@@ -99,9 +99,8 @@
 						</div>
 						<div class="forecast">
 							<div class="forecast-header">
-								<div>
+								<div class ="day>
 								<script>
-								    function myFunction() {
    	 							    var d = new Date();
 								    var weekday = new Array(7);
 								    weekday[6] = "Sunday";
@@ -112,9 +111,10 @@
 								    weekday[4] = "Friday";
 								    weekday[5] = "Saturday";
 								    var n = weekday[d.getDay()];
-								    document.getElementById("demo").innerHTML = n;
-									}
+								    document.write(n)
+								
 							</script>
+											   </div>
 							</div> <!-- .forecast-header -->
 							<div class="forecast-content">
 								<div class="forecast-icon">
