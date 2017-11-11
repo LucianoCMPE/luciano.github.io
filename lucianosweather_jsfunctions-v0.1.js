@@ -52,10 +52,10 @@ $(function(){
 	weekday[0] = "Thursday";
 	weekday[1] = "Friday";
 	weekday[2] = "Saturday";
-  var ed = weekday[x.getDay()];
-	$("#day4").text(ed);
+  var w = weekday[x.getDay()];
+	$("#day4").text(w);
 });
-  var dd = new Date();
+  var f = new Date();
   var weekday = new Array(7);
 	weekday[2] = "Sunday";
 	weekday[3] = "Monday";
@@ -64,11 +64,11 @@ $(function(){
 	weekday[6] = "Thursday";
 	weekday[0] = "Friday";
 	weekday[1] = "Saturday";
-  var ce = weekday[dd.getDay()];
-	$("#day5").text(ce);
+  var l = weekday[f.getDay()];
+	$("#day5").text(l);
 });
 
-var dew = new Date();
+var u = new Date();
   var weekday = new Array(7);
 	weekday[1] = "Sunday";
 	weekday[2] = "Monday";
@@ -77,8 +77,8 @@ var dew = new Date();
 	weekday[5] = "Thursday";
 	weekday[6] = "Friday";
 	weekday[0] = "Saturday";
-  var cxx = weekday[dew.getDay()];
-	$("#day6").text(cxx);
+  var m = weekday[u.getDay()];
+	$("#day6").text(m);
 });
 
 
