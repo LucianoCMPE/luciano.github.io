@@ -13,7 +13,7 @@ $(function(){
 	$("#day1").text(n);
 });
 
-$(function(){
+$(function2(){
 
   var d = new Date();
   var weekday = new Array(7);
