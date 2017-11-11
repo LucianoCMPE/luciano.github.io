@@ -8,12 +8,10 @@ $(function(){
 	weekday[2] = "Wednesday";
 	weekday[3] = "Thursday";
 	weekday[4] = "Friday";
-  	weekday[5] = "Saturday";
+  weekday[5] = "Saturday";
   var n = weekday[d.getDay()];
 	$("#day1").text(n);
 });
-
-
 
 
 
