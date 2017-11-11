@@ -13,9 +13,9 @@ $(function(){
 	$("#day1").text(n);
 });
 
-$(functiontwo(){
+$(function(){
 
-  var d = new Date();
+  var q = new Date();
   var weekday = new Array(7);
 	weekday[5] = "Sunday";
 	weekday[6] = "Monday";
@@ -24,8 +24,8 @@ $(functiontwo(){
 	weekday[2] = "Thursday";
 	weekday[3] = "Friday";
   	weekday[4] = "Saturday";
-  	var n = weekday[d.getDay()];
-	$("#day2").text(n);
+  	var c = weekday[q.getDay()];
+	$("#day2").text(c);
 });
 
 
