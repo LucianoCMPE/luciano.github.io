@@ -30,7 +30,7 @@ $(function(){
 
 $(function(){
 
-  var ee = new Date();
+  var j = new Date();
   var weekday = new Array(7);
 	weekday[4] = "Sunday";
 	weekday[5] = "Monday";
@@ -39,8 +39,8 @@ $(function(){
 	weekday[1] = "Thursday";
 	weekday[2] = "Friday";
 	weekday[3] = "Saturday";
-  var cc = weekday[ee.getDay()];
-	$("#day3").text(cc);
+  var z = weekday[j.getDay()];
+	$("#day3").text(z);
 });
 
   var d = new Date();
