@@ -43,8 +43,18 @@ $(function(){
 	$("#day3").text(z);
 });
 
-  
-
+  var x = new Date();
+  var weekday = new Array(7);
+	weekday[3] = "Sunday";
+	weekday[4] = "Monday";
+	weekday[5] = "Tuesday";
+	weekday[6] = "Wednesday";
+	weekday[0] = "Thursday";
+	weekday[1] = "Friday";
+	weekday[2] = "Saturday";
+  var w = weekday[x.getDay()];
+	$("#day4").text(w);
+});
 
 
 
