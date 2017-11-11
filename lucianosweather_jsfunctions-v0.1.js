@@ -43,43 +43,6 @@ $(function(){
 	$("#day3").text(z);
 });
 
-  var d = new Date();
-  var weekday = new Array(7);
-	weekday[3] = "Sunday";
-	weekday[4] = "Monday";
-	weekday[5] = "Tuesday";
-	weekday[6] = "Wednesday";
-	weekday[0] = "Thursday";
-	weekday[1] = "Friday";
-	weekday[2] = "Saturday";
-  var n = weekday[d.getDay()];
-	$("#day4").text(n);
-});
-  var d = new Date();
-  var weekday = new Array(7);
-	weekday[2] = "Sunday";
-	weekday[3] = "Monday";
-	weekday[4] = "Tuesday";
-	weekday[5] = "Wednesday";
-	weekday[6] = "Thursday";
-	weekday[0] = "Friday";
-	weekday[1] = "Saturday";
-  var n = weekday[d.getDay()];
-	$("#day5").text(n);
-});
-
-var d = new Date();
-  var weekday = new Array(7);
-	weekday[1] = "Sunday";
-	weekday[2] = "Monday";
-	weekday[3] = "Tuesday";
-	weekday[4] = "Wednesday";
-	weekday[5] = "Thursday";
-	weekday[6] = "Friday";
-	weekday[0] = "Saturday";
-  var n = weekday[d.getDay()];
-	$("#day6").text(n);
-});
 
 
 
