@@ -43,6 +43,7 @@ $(function(){
 	$("#day3").text(z);
 });
 
+$(function(){
   var x = new Date();
   var weekday = new Array(7);
 	weekday[3] = "Sunday";
