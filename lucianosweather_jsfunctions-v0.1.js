@@ -86,10 +86,5 @@ $(function(){
 });
 
 
-#right{
-    border-right:0px;
-}
-
-
 
 
