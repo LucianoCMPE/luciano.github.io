@@ -60,13 +60,13 @@ $(function(){
 $(function(){
   var f = new Date();
   var weekday = new Array(7);
-	weekday[3] = "Sunday";
-	weekday[4] = "Monday";
-	weekday[5] = "Tuesday";
-	weekday[6] = "Wednesday";
-	weekday[0] = "Thursday";
-	weekday[1] = "Friday";
-	weekday[2] = "Saturday";
+	weekday[2] = "Sunday";
+	weekday[3] = "Monday";
+	weekday[4] = "Tuesday";
+	weekday[5] = "Wednesday";
+	weekday[6] = "Thursday";
+	weekday[0] = "Friday";
+	weekday[1] = "Saturday";
   var i = weekday[f.getDay()];
 	$("#day5").text(i);
 });
@@ -74,13 +74,13 @@ $(function(){
 $(function(){
   var a = new Date();
   var weekday = new Array(7);
-	weekday[3] = "Sunday";
-	weekday[4] = "Monday";
-	weekday[5] = "Tuesday";
-	weekday[6] = "Wednesday";
-	weekday[0] = "Thursday";
-	weekday[1] = "Friday";
-	weekday[2] = "Saturday";
+	weekday[1] = "Sunday";
+	weekday[2] = "Monday";
+	weekday[3] = "Tuesday";
+	weekday[4] = "Wednesday";
+	weekday[5] = "Thursday";
+	weekday[6] = "Friday";
+	weekday[0] = "Saturday";
   var s = weekday[a.getDay()];
 	$("#day6").text(s);
 });
