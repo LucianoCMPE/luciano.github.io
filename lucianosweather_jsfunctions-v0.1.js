@@ -57,6 +57,33 @@ $(function(){
 	$("#day4").text(w);
 });
 
+$(function(){
+  var f = new Date();
+  var weekday = new Array(7);
+	weekday[3] = "Sunday";
+	weekday[4] = "Monday";
+	weekday[5] = "Tuesday";
+	weekday[6] = "Wednesday";
+	weekday[0] = "Thursday";
+	weekday[1] = "Friday";
+	weekday[2] = "Saturday";
+  var i = weekday[f.getDay()];
+	$("#day5").text(i);
+});
+
+$(function(){
+  var a = new Date();
+  var weekday = new Array(7);
+	weekday[3] = "Sunday";
+	weekday[4] = "Monday";
+	weekday[5] = "Tuesday";
+	weekday[6] = "Wednesday";
+	weekday[0] = "Thursday";
+	weekday[1] = "Friday";
+	weekday[2] = "Saturday";
+  var s = weekday[a.getDay()];
+	$("#day6").text(s);
+});
 
 
 
