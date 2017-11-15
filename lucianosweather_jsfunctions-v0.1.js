@@ -16,6 +16,8 @@ $(function(){
 	var api_key = '924dbd1a7a384a1d6dfb73f3a1319631';
 	var request = new XMLHttpRequest();
 	request.open('GET', 'http://api.openweathermap.org/data/2.5/weather?q=Baltimore,ca&units=imperial&appid=' + api_key);
+	request.responseType = 'json';
+request.send();
 	// var weather_data = loadjson('http://api.openweathermap.org/data/2.5/weather?q=Baltimore,ca&units=imperial&appid=' + api_key);
 	request.onload = function() {
   		alert(request.response); // get the string from the response
