@@ -24,7 +24,7 @@ $(function(){
 	//}
 	$.getJSON('http://api.openweathermap.org/data/2.5/weather?q=London,uk&APPID=924dbd1a7a384a1d6dfb73f3a1319631', function(data) {
     //data is the JSON string
-		alert(data);
+		alert(data.main.temp);
 });
 	//alert(weather_data);
 	//alert(weather_data.main.temp);
