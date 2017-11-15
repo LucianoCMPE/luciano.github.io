@@ -25,6 +25,9 @@ $(function(){
 	$.getJSON('http://api.openweathermap.org/data/2.5/weather?q=Baltimore,us&units=imperial&appid=924dbd1a7a384a1d6dfb73f3a1319631', function(data) {
     //data is the JSON string
 		$("#temp1").html(Math.round(data.main.temp) + '<sup>o</sup>');
+		foreach($data['list'] as $day => $value) {
+ 		 alert( "Max temperature for day " . $day . " will be " . $value[temp][max] . "<br />") ;
+}
 });
 	//alert(weather_data);
 	//alert(weather_data.main.temp);
