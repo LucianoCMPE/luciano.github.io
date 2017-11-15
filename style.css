@@ -1262,7 +1262,6 @@ form textarea {
       .forecast-container .forecast.today .forecast-content {
         text-align: left;
         padding-top: 30px;
-        height:100px;
         padding-bottom: 30px; }
       .forecast-container .forecast.today .location {
         font-size: 18px;
