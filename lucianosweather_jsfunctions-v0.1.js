@@ -15,7 +15,8 @@ $(function(){
 	// Change this to your API key between the single quotes ('):
 	var api_key = '924dbd1a7a384a1d6dfb73f3a1319631';
 	var weather_data = loadjson('http://api.openweathermap.org/data/2.5/weather?q=Baltimore,ca&units=imperial&appid=' + api_key);
-
+	alert(weather_data);
+	alert(weather_data.main.temp);
 	$("#temp1").text(weather_data.main.temp);
 });
 
