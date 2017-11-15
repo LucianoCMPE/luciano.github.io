@@ -20,7 +20,7 @@ $(function(){
 request.send();
 	// var weather_data = loadjson('http://api.openweathermap.org/data/2.5/weather?q=Baltimore,ca&units=imperial&appid=' + api_key);
 	request.onload = function() {
-  		alert(request.response); // get the string from the response
+  		alert(request.response['main']); // get the string from the response
 	}
 	
 	//alert(weather_data);
