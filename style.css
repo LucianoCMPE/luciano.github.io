@@ -89,9 +89,6 @@ strong {
 dfn {
   font-style: italic; }
 
-div#day1 { 
- display: none; 
-}
 mark {
   background: #ff0;
   color: #000; }
@@ -1684,3 +1681,24 @@ form textarea {
       background:url("Test/Baltimore-sunset-pano.jpg");
       background-repeat: no-repeat;
       background-size: cover; }
+
+    div#day1 { 
+ display: none; 
+}
+    div#day2 { 
+ display: none; 
+}
+
+    div#day3 { 
+ display: none; 
+}
+
+   div#day4 { 
+ display: none; 
+}
+   div#day5 { 
+ display: none; 
+}
+   div#day6 { 
+ display: none; 
+}
