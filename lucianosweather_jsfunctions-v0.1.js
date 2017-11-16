@@ -1,5 +1,3 @@
-$('#loginForm').on('submit', function(e) {
-    e.preventDefault();
 	$(function(){
 
 	var d = new Date();
@@ -13,7 +11,7 @@ $('#loginForm').on('submit', function(e) {
   	weekday[5] = "Saturday";
   	var n = weekday[d.getDay()];
 	$("#day1").text(n);
-});
+
 	
 	// Change this to your API key between the single quotes ('):
 	//var api_key = '924dbd1a7a384a1d6dfb73f3a1319631';
