@@ -1702,3 +1702,6 @@ form textarea {
    div#day6 { 
  display: none; 
 }
+  div#temp1 {
+  display: none;
+}
