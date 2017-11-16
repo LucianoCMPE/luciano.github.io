@@ -1,4 +1,4 @@
-	$("#cloudy").fadeIn()
+	$("#cloudy").show();
 	$(function(){
 	var d = new Date();
 	var weekday = new Array(7);
