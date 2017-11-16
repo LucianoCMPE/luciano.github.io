@@ -89,6 +89,9 @@ strong {
 dfn {
   font-style: italic; }
 
+div#day1 { 
+ display: none; 
+}
 mark {
   background: #ff0;
   color: #000; }
