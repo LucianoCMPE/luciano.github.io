@@ -102,4 +102,4 @@ $(function(){
   var s = weekday[a.getDay()];
 	$("#day6").fadeIn().text(s);
 });  
-
+	$("#cloudy").fadeIn()
