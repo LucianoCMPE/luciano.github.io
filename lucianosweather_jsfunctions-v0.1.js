@@ -29,7 +29,7 @@
 	//alert(weather_data);
 	//alert(weather_data.main.temp);
 	//$("#temp1").text(weather_data.main.temp);
-});
+
 
 $(function(){
 
@@ -102,4 +102,4 @@ $(function(){
   var s = weekday[a.getDay()];
 	$("#day6").text(s);
 });  
-});
+
