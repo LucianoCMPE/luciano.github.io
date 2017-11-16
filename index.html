@@ -274,8 +274,21 @@
    			$(window).scrollTop(0);
 		}); 
 		</script>
-		<script src="lucianosweather_jsfunctions-v0.1.js"></script>
-		
+		<script src="lucianosweather_jsfunctions-v0.1.js">
+			setInterval(abc, 1000);
+
+			function abc() {
+			var xhttp = new XMLHttpRequest();
+			xhttp.onreadystatechange = function() {
+			if (this.readyState == 4 && this.status == 200) {
+			document.getElementById("container").innerHTML = this.responseText;
+			}
+			};
+			xhttp.open("GET", "notify.asp", true);
+			xhttp.send();
+			}
+	    	</script>
+	 <body id="container" onload="javascript:abc()">
 	</body>
 
 </html>
