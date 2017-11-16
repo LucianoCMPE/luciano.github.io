@@ -105,5 +105,10 @@ $(function(){
 });
 
 
-
+function fadeDiv(day1) {
+  $("#main").find("div").each(function(n,i){
+            var id = this.id,
+$id = $('#' + id);
+            (id == day1)? $id.fadeIn(300):$id.fadeOut(250);
+        });
 
