@@ -1,3 +1,4 @@
+	$("#cloudy").fadeIn()
 	$(function(){
 	var d = new Date();
 	var weekday = new Array(7);
@@ -102,4 +103,4 @@ $(function(){
   var s = weekday[a.getDay()];
 	$("#day6").fadeIn().text(s);
 });  
-	$("#cloudy").fadeIn()
+	
