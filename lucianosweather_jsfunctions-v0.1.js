@@ -105,7 +105,7 @@ $(function(){
 });
 
 
-function fadeDiv(day1) {
+$function fadeDiv(day1) {
   $("#main").find("div").each(function(n,i){
             var id = this.id,
 $id = $('#' + id);
