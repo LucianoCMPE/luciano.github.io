@@ -1286,7 +1286,6 @@ form textarea {
     .forecast-container .forecast .forecast-header {
       background: rgba(0, 0, 0, 0.1);
       padding: 10px;
-      display:none;
       text-align: center;
       font-weight: 400; 
       height: 40px;
