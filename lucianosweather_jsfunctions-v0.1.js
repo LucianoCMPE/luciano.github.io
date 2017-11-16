@@ -43,7 +43,7 @@ $(function(){
 	weekday[3] = "Friday";
   	weekday[4] = "Saturday";
   	var c = weekday[q.getDay()];
-	$("#day2").text(c);
+	$("#day2").fadeIn().text(c);
 });
 
 $(function(){
@@ -58,7 +58,7 @@ $(function(){
 	weekday[2] = "Friday";
 	weekday[3] = "Saturday";
   var z = weekday[j.getDay()];
-	$("#day3").text(z);
+	$("#day3").fadeIn().text(z);
 });
 
 $(function(){
@@ -72,7 +72,7 @@ $(function(){
 	weekday[1] = "Friday";
 	weekday[2] = "Saturday";
   var w = weekday[x.getDay()];
-	$("#day4").text(w);
+	$("#day4").fadeIn().text(w);
 });
 
 $(function(){
@@ -86,7 +86,7 @@ $(function(){
 	weekday[0] = "Friday";
 	weekday[1] = "Saturday";
   var i = weekday[f.getDay()];
-	$("#day5").text(i);
+	$("#day5").fadeIn().text(i);
 });
 
 $(function(){
@@ -100,6 +100,6 @@ $(function(){
 	weekday[6] = "Friday";
 	weekday[0] = "Saturday";
   var s = weekday[a.getDay()];
-	$("#day6").text(s);
+	$("#day6").fadeIn().text(s);
 });  
 
