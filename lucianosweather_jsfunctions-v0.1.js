@@ -10,7 +10,7 @@
 	weekday[4] = "Friday";
   	weekday[5] = "Saturday";
   	var n = weekday[d.getDay()];
-	$("#day1").text(n);
+	$("#day1").text(n).fadeIn();
 
 	
 	// Change this to your API key between the single quotes ('):
@@ -102,15 +102,6 @@ $(function(){
 	weekday[0] = "Saturday";
   var s = weekday[a.getDay()];
 	$("#day6").text(s);
-});
-
-$(document).ready(function(){  
-  $("#btn1").click(function(){  
-    $("div").fadeOut(3000);  
-  });  
-   $("#btn2").click(function(){  
-    $("div").fadeIn(3000);  
-  });   
 });  
 
 
