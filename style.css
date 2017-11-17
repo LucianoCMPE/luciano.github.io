@@ -1252,7 +1252,7 @@ form textarea {
         .forecast-container .forecast.today .forecast-header:after {
           content: " ";
           clear: both;
-          display: inline;
+          display: block;
           overflow: hidden;
           height: 0; }
         .forecast-container .forecast.today .forecast-header .day {
@@ -1281,7 +1281,7 @@ form textarea {
           vertical-align: middle; }
       @media screen and (max-width: 990px) {
         .forecast-container .forecast.today {
-          display: block;
+          display: inline;
           width: 100%; } }
     .forecast-container .forecast .forecast-header {
       background: rgba(0, 0, 0, 0.1);
