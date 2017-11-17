@@ -69,14 +69,14 @@
 						<div class="today forecast">
 							<div class="forecast-header">
 								<div class="day">Current Temperature</div>
-								<div class="date">
+								<div class="date" style ="display: none">
 								<script> var monthNames = ["January", "February", "March", "April", "May", "June",
   								"July", "August", "September", "October", "November", "December"
 								];
 								var d = new Date();
 								var dateObj = new Date();
 								var day = dateObj.getDate();
-								document.write(monthNames[d.getMonth()]);
+								document.write(monthNames[d.getMonth()]).css('display', 'inline-block').hide().fadeIn();
 								document.write("&nbsp;")
 								document.write(day)
 								</script>
