@@ -31,6 +31,8 @@
 		$("#cloudy2").show("slow");
 		$("#cloudy3").show("slow");
 		$("#cloudy4").show("slow");
+		$("#cloudy5").show("slow");
+		$("#cloudy6").show("slow");
 });
 	//alert(weather_data);
 	//alert(weather_data.main.temp);
