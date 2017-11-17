@@ -1706,3 +1706,6 @@ form textarea {
   display: none;
   text-align: left;
 }
+  .cloudy {
+    display:none;
+}
