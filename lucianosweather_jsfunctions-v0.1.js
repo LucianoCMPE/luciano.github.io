@@ -1,5 +1,5 @@
-	$("#table").show("slow)
-	$("#date").fadeIn(1000).css("display","inline-block")
+	$("#table").show("slow);
+	$("#date").fadeIn(1000).css("display","inline-block");
 	$(function(){
 	var d = new Date();
 	var weekday = new Array(7);
