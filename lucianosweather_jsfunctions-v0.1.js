@@ -1,3 +1,4 @@
+	$("#table").show("slow)
 	$("#date").fadeIn(1000).css("display","inline-block")
 	$(function(){
 	var d = new Date();
