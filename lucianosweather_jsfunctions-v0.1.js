@@ -1,4 +1,4 @@
-	$("#table").show("slow").css("display","table");
+	$("#table").hide().show("slow").css("display","table");
 	$("#date").fadeIn(1000).css("display","inline-block");
 	$(function(){
 	var d = new Date();
