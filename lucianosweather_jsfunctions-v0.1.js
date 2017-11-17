@@ -27,6 +27,7 @@
     //data is the JSON string
 		$("#temp1").fadeIn(1000).css("display","inline-block").html(Math.round(data.main.temp) + '<sup>o</sup>');
 		$("#cloudy").show("slow");
+		$("#cloudy1").show("slow");
 });
 	//alert(weather_data);
 	//alert(weather_data.main.temp);
