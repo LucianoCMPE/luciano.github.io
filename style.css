@@ -1704,4 +1704,5 @@ form textarea {
 }
   div#temp1 {
   display: none;
+  text-align: left;
 }
