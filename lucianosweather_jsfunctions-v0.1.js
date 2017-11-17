@@ -33,6 +33,7 @@
 		$("#cloudy4").show("slow");
 		$("#cloudy5").show("slow");
 		$("#cloudy6").show("slow");
+		$("#tempz").fadeIn(1000);
 });
 	//alert(weather_data);
 	//alert(weather_data.main.temp);
