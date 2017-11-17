@@ -9,7 +9,7 @@
 	weekday[4] = "Friday";
   	weekday[5] = "Saturday";
   	var n = weekday[d.getDay()];
-	$("#day1").fadeIn("slow").text(n);
+	$("#day1").fadeIn(2000).text(n);
 	});
 
 	// Change this to your API key between the single quotes ('):
@@ -44,7 +44,7 @@ $(function(){
 	weekday[3] = "Friday";
   	weekday[4] = "Saturday";
   	var c = weekday[q.getDay()];
-	$("#day2").fadeIn("slow").text(c);
+	$("#day2").fadeIn(2000).text(c);
 });
 
 $(function(){
@@ -59,7 +59,7 @@ $(function(){
 	weekday[2] = "Friday";
 	weekday[3] = "Saturday";
   var z = weekday[j.getDay()];
-	$("#day3").fadeIn("slow").text(z);
+	$("#day3").fadeIn(2000).text(z);
 });
 
 $(function(){
@@ -73,7 +73,7 @@ $(function(){
 	weekday[1] = "Friday";
 	weekday[2] = "Saturday";
   var w = weekday[x.getDay()];
-	$("#day4").fadeIn("slow").text(w);
+	$("#day4").fadeIn(2000).text(w);
 });
 
 $(function(){
@@ -87,7 +87,7 @@ $(function(){
 	weekday[0] = "Friday";
 	weekday[1] = "Saturday";
   var i = weekday[f.getDay()];
-	$("#day5").fadeIn("slow").text(i);
+	$("#day5").fadeIn(2000).text(i);
 });
 
 $(function(){
@@ -101,6 +101,6 @@ $(function(){
 	weekday[6] = "Friday";
 	weekday[0] = "Saturday";
   var s = weekday[a.getDay()];
-	$("#day6").fadeIn("slow").text(s);
+	$("#day6").fadeIn(2000).text(s);
 });  
 	
