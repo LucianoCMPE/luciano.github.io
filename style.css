@@ -1703,9 +1703,8 @@ form textarea {
  display: none; 
 }
   div#temp1 {
-  display: none;
-  text-align: left;
+  visibility:hidden;
 }
   .cloudy {
-    display:none;
+   visibility:hidden;
 }
