@@ -1703,8 +1703,8 @@ form textarea {
  display: none; 
 }
   div#temp1 {
-  visibility:hidden;
+  display:none;
 }
   .cloudy {
-   visibility:hidden;
+   display:none;
 }
