@@ -24,7 +24,7 @@
 	//}
 	$.getJSON('http://api.openweathermap.org/data/2.5/weather?q=Baltimore,us&units=imperial&appid=924dbd1a7a384a1d6dfb73f3a1319631', function(data) {
     //data is the JSON string
-		$("#temp1").fadeIn("slow").css("display","inline-block").html(Math.round(data.main.temp) + '<sup>o</sup>');
+		$("#temp1").fadeIn(2000).css("display","inline-block").html(Math.round(data.main.temp) + '<sup>o</sup>');
 		$("#cloudy").show("slow");
 });
 	//alert(weather_data);
