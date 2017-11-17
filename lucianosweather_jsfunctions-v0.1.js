@@ -35,6 +35,16 @@
 		$("#cloudy6").show("slow");
 		$("#tempz").fadeIn(1000);
 		$("#tempz1").fadeIn(1000);
+		$("#tempz2").fadeIn(1000);
+		$("#tempz3").fadeIn(1000);
+		$("#tempz4").fadeIn(1000);
+		$("#tempz5").fadeIn(1000);
+		$("#tempz6").fadeIn(1000);
+		$("#tempz7").fadeIn(1000);
+		$("#tempz8").fadeIn(1000);
+		$("#tempz9").fadeIn(1000);
+		$("#tempz10").fadeIn(1000);
+		$("#tempz11").fadeIn(1000);		
 });
 	//alert(weather_data);
 	//alert(weather_data.main.temp);
