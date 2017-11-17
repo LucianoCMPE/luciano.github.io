@@ -28,6 +28,9 @@
 		$("#temp1").fadeIn(1000).css("display","inline-block").html(Math.round(data.main.temp) + '<sup>o</sup>');
 		$("#cloudy").show("slow");
 		$("#cloudy1").show("slow");
+		$("#cloudy2").show("slow");
+		$("#cloudy3").show("slow");
+		$("#cloudy4").show("slow");
 });
 	//alert(weather_data);
 	//alert(weather_data.main.temp);
