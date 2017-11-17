@@ -1242,7 +1242,7 @@ form textarea {
       background-color: #262936; }
     @media screen and (max-width: 990px) {
       .forecast-container .forecast {
-        display: inline;
+        display: block;
         width: 16.6667%;
         float: left; } }
     .forecast-container .forecast.today {
@@ -1252,7 +1252,7 @@ form textarea {
         .forecast-container .forecast.today .forecast-header:after {
           content: " ";
           clear: both;
-          display: block;
+          display: inline;
           overflow: hidden;
           height: 0; }
         .forecast-container .forecast.today .forecast-header .day {
