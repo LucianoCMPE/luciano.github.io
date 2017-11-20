@@ -1,3 +1,4 @@
+	$("#table4").hide().fadeIn();
 	$("#table3").hide().slideDown(1000);
 	$("#table2").hide().slideDown(1000);
 	$("#table1").hide().slideDown(1000);
@@ -39,7 +40,7 @@
 		$("#cloudy4").show("slow");
 		$("#cloudy5").show("slow");
 		$("#cloudy6").show("slow");
-		$("#tempz").fadeIn(1000).css("display","inline-block").html(Math.round(data.list[7].main.temp_max) + '<sup>o</sup>');
+		$("#tempz").fadeIn(1000).css("display","inline-block").html(Math.round(data.list[7].main.temp_max) + '<sup>o</sup>'); // start at the 2nd temp max 0 for each aray//
 		$("#tempz1").fadeIn(1000);
 		$("#tempz2").fadeIn(1000);
 		$("#tempz3").fadeIn(1000);
