@@ -1,264 +1,280 @@
-<!DOCTYPE html>
-<html lang="en">
-	<head>
-		<link rel="shortcut icon" href="http://lucianosweather.com/Luciano.ico"/>
-		<meta charset="UTF-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1">
-		
-		<title>Luciano's Weather</title>
-		
-		<!-- Loading third party fonts -->
-		<link href="http://fonts.googleapis.com/css?family=Roboto:300,400,700|" rel="stylesheet" type="text/css">
-		<link href="fonts/font-awesome.min.css" rel="stylesheet" type="text/css">
-
-		<!-- Loading main css file -->
-		<link rel="stylesheet" href="style.css">
-		
-		<!--[if lt IE 9]>
-		<script src="js/ie-support/html5.js"></script>
-		<script src="js/ie-support/respond.js"></script>
-		<![endif]-->
-			
-	</head>
-	
-
-	<body>
-		
-		<div class="site-content">
-			<div class="site-header">
-				<div class="container">
-					<a href="http://www.lucianosweather.com" class="branding">
-						<img src="images/logo.png" alt="" class="logo">
-						<div class="logo-type">
-							<h1 class="site-title">Luciano's Weather</h1>
-							<small class="site-description">Your stop for winter weather</small>
-						</div>
-					</a>
-
-					<!-- Default snippet for navigation -->
-					<div class="main-navigation">
-						<button type="button" class="menu-toggle"><i class="fa fa-bars"></i></button>
-						<ul class="menu">
-							<li class="menu-item current-menu-item"><a href="http://www.lucianosweather.com">Home</a></li>
-							<li class="menu-item"><a href="news.html">News</a></li>
-							<li class="menu-item"><a href="live-cameras.html">Live cameras</a></li>
-							<li class="menu-item"><a href="photos.html">Photos</a></li>
-							<li class="menu-item"><a href="contact.html">Contact</a></li>
-						</ul> <!-- .menu -->
-					</div> <!-- .main-navigation -->
-
-					<div class="mobile-navigation"></div>
-
-				</div>
-			</div> <!-- .site-header -->
-
-			<div class="hero" style="background-image: url(Test/1477405396_Baltimore.jpg)"
-				<div class="container"><!--
-					<form action="#" class="find-location">
-						<input type="text" placeholder="Find your location...">
-						<input type="submit" value="Find">
-					</form>
-					-->
-				</div>
-			</div>
-										 
-			<div class="forecast-table">
-				<div class="container">
-					<div class="forecast-container" style="display:none;" id="table">
-						<div class="today forecast">
-							<div class="forecast-header">
-								<div class="day">Current Temperature</div>
-								<div class="date" id="date" style ="display: none">
-								<script> var monthNames = ["January", "February", "March", "April", "May", "June",
-  								"July", "August", "September", "October", "November", "December"
-								];
-								var d = new Date();
-								var dateObj = new Date();
-								var day = dateObj.getDate();
-								document.write(monthNames[d.getMonth()]);
-								document.write("&nbsp;")
-								document.write(day)
-								</script>
-								</div>
-										
-							</div> <!-- .forecast-header -->
-							<div class="forecast-content">
-								<div class="location">Baltimore</div>
-								<div class="degree">
-									<div class="num" id = "temp1" style="display: none"> </div>
-								<div class="forecast-icon">
-								<img id = "cloudy" class ="cloudy" src="images/icons/icon-5.svg" width=90/>
-								</div>	
-							</div>
-							</div>
-						</div>
-						<div class="forecast">
-							<div class="forecast-header">
-								<div class ="day" id="day1"> 
-							</div>
-							</div> <!-- .forecast-header -->
-							<div class="forecast-content">
-								<div class="forecast-icon">
-									<img id ="cloudy1" class="cloudy1" src="images/icons/icon-5.svg" width=48/>
-								</div>
-								<div id ="tempz" class="degree cloudy1"><sup>o</sup></div>
-								<div id ="tempz1" class="cloudy1"> <small>33<sup>o</sup></small></div>
-							</div>
-						</div>
-						<div class="forecast">
-							<div class="forecast-header">
-								<div class ="day" id="day2">
-								
-							</div>
-							</div> <!-- .forecast-header -->
-							<div class="forecast-content">
-								<div class="forecast-icon">
-									<img id="cloudy2" class="cloudy1" src="images/icons/icon-2.svg" width=48/>
-								</div>
-								<div id="tempz2" class="degree cloudy1">50<sup>o</sup></div>
-								<div id ="tempz3" class="cloudy1"><small>30<sup>o</sup></small></div>
-							</div>
-						</div>
-						<div class="forecast">
-							<div class="forecast-header">
-								<div class ="day" id="day3">
-								
-							</div>
-							</div> <!-- .forecast-header -->
-							<div class="forecast-content">
-								<div class="forecast-icon">
-									<img id ="cloudy3" class="cloudy1" src="images/icons/icon-14.svg" width=48/>
-								</div>
-								<div id="tempz4" class="degree cloudy1">48<sup>o</sup></div>
-								<div id ="tempz5" class="cloudy1"><small>39<sup>o</sup></small></div>
-							</div>
-						</div>
-						<div class="forecast">
-							<div class="forecast-header">
-								<div class ="day" id="day4">
-								
-							</div>
-							</div> <!-- .forecast-header -->
-							<div class="forecast-content">
-								<div class="forecast-icon">
-									<img id ="cloudy4" class="cloudy1" src="images/icons/icon-3.svg" width=48/>
-								</div>
-								<div id="tempz6" class="degree cloudy1">51<sup>o</sup></div>
-								<div id ="tempz7" class="cloudy1"><small>34<sup>o</sup></small></div>
-							</div>
-						</div>
-						<div class="forecast">
-							<div class="forecast-header">
-								<div class ="day" id="day5">
-								
-							</div>
-							</div> <!-- .forecast-header -->
-							<div class="forecast-content">
-								<div class="forecast-icon">
-									<img id="cloudy5" class="cloudy1" src="images/icons/icon-3.svg" width=48/>
-								</div>
-								<div id="tempz8" class="degree cloudy1">54<sup>o</sup></div>
-								<div id ="tempz9" class="cloudy1"><small>32<sup>o</sup></small></div>
-							</div>
-						</div>
-						<div class="forecast">
-							<div class="forecast-header">
-								<div class ="day" id="day6">
-								
-							</div>
-							</div> <!-- .forecast-header -->
-							<div class="forecast-content">
-								<div class="forecast-icon">
-									<img id="cloudy6" class="cloudy1" src="images/icons/icon-14.svg" width=48/>
-								</div>
-								<div id="tempz10" class="degree cloudy">43<sup>o</sup></div>
-								<div id ="tempz11" class="cloudy1"><small>29<sup>o</sup></small></div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<main class="main-content">
-				<div class="fullwidth-block">
-					<div class="container" style="display:none;" id="table1">
-						<h2 class="section-title">Live cameras</h2>
-						<div class="row">
-							<div class="col-md-3 col-sm-6">
-								<div class="live-camera"> <a href ="http://www.chart.state.md.us/video/video.php?feed=2f009e8a00e50039004606363d235daa" target="_blank">
-									<figure class="live-camera-cover"><img src="Test/Capture.PNG" alt=""></figure></a>
-									<h3 class="location">Baltimore</h3>
-									<small class="date">I-95 S/ I-695</small>
-								</div>
-							</div>
-							<div class="col-md-3 col-sm-6">
-								<div class="live-camera"> <a href ="http://www.chart.state.md.us/video/video.php?feed=0b017ae1019100e300441a366e230214" target="_blank">
-									<figure class="live-camera-cover"><img src="Test/capturetwo.PNG" alt=""></figure></a>
-									<h3 class="location">Baltimore</h3>
-									<small class="date">I-895 N/B</small>
-								</div>
-							</div>
-							<div class="col-md-3 col-sm-6">
-								<div class="live-camera"> <a href = "http://www.chart.state.md.us/video/video.php?feed=dd0157c42d7c001300503336c4235c0a" target="_blank">
-									<figure class="live-camera-cover"><img src="Test/bayb.PNG" alt=""></figure></a>
-									<h3 class="location">Bay Bridge</h3>
-									<small class="date">East</small>
-								</div>
-							</div>
-							<div class="col-md-3 col-sm-6">
-								<div class="live-camera"> <a href = "http://www.ocbound.com/ocean-gallery-boardwalk-webcam" target="_blank">
-									<figure class="live-camera-cover"><img src="Test/OCMD.PNG" alt=""></figure></a>
-									<h3 class="location">Ocean City Boardwalk</h3>
-									<small class="date">2nd Street</small>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<div class="fullwidth-block" data-bg-color="#262936">
-					<div class="container">
-						<div class="row">
-							<div class="col-md-4">
-								<div class="news">
-									<div class="date">Soon</div>
-									<h3><a href="#">Winter Making an Early Return?</a></h3>
-									<p>Future Information </p>
-								</div>
-							</div>
-							<div class="col-md-4">
-								<div class="news">
-									<div class="date">Soon</div>
-									<h3><a href="#">Winter Forecast</a> </h3>
-									<p>Future Information</p>
-								</div>
-							</div>
-							<div class="col-md-4">
-								<div class="news">
-									<div class="date">Soon</div>
-									<h3><a href="#">Future Information</a></h3>
-									<p>Future Information</p>
-						     </div>
-			</main> <!-- .main-content -->
-
-			<footer class="site-footer">
-				<div>
+ <!DOCTYPE html>
+ <html lang="en">
+ 	<head>
+ 		<link rel="shortcut icon" href="http://lucianosweather.com/Luciano.ico"/>
+ 		<meta charset="UTF-8">
+ 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+ 		<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1">
+ 		
+ 		<title>Luciano's Weather</title>
+ 		
+ 		<!-- Loading third party fonts -->
+ 		<link href="http://fonts.googleapis.com/css?family=Roboto:300,400,700|" rel="stylesheet" type="text/css">
+ 		<link href="fonts/font-awesome.min.css" rel="stylesheet" type="text/css">
  
- 		                       <p class="colophon">For more info contact me on <a href ="https://www.twitter.com/Luciano___98" target="_blank">twitter</a></p>
+ 		<!-- Loading main css file -->
+ 		<link rel="stylesheet" href="style.css">
+ 		
+ 		<!--[if lt IE 9]>
+ 		<script src="js/ie-support/html5.js"></script>
+ 		<script src="js/ie-support/respond.js"></script>
+ 		<![endif]-->
+ 			
+ 	</head>
+ 	
+ 
+ 	<body>
+ 		
+ 		<div class="site-content">
+ 			<div class="site-header">
+ 				<div class="container">
+ 					<a href="http://www.lucianosweather.com" class="branding">
+ 						<img src="images/logo.png" alt="" class="logo">
+ 						<div class="logo-type">
+ 							<h1 class="site-title">Luciano's Weather</h1>
+ 							<small class="site-description">Your stop for winter weather</small>
+ 						</div>
+ 					</a>
+ 
+ 					<!-- Default snippet for navigation -->
+ 					<div class="main-navigation">
+ 						<button type="button" class="menu-toggle"><i class="fa fa-bars"></i></button>
+ 						<ul class="menu">
+ 							<li class="menu-item current-menu-item"><a href="http://www.lucianosweather.com">Home</a></li>
+ 							<li class="menu-item"><a href="news.html">News</a></li>
+ 							<li class="menu-item"><a href="live-cameras.html">Live cameras</a></li>
+ 							<li class="menu-item"><a href="photos.html">Photos</a></li>
+ 							<li class="menu-item"><a href="contact.html">Contact</a></li>
+ 						</ul> <!-- .menu -->
+ 					</div> <!-- .main-navigation -->
+ 
+ 					<div class="mobile-navigation"></div>
+ 
  				</div>
-			</footer> <!-- .site-footer -->
-		</div>
-		
-		<script src="jquery-3.2.1.min.js"></script>
-		<script src="plugins.js"></script>
-		<script src="app.js"></script>
-		<script> 
-		$(window).on('beforeunload', function() {
-   			$(window).scrollTop(0);
-		}); 
-		</script>
-		<script src="lucianosweather_jsfunctions-v0.1.js"></script>
-	
-	</body>
-
-</html>
+ 			</div> <!-- .site-header -->
+ 
+ 			<div class="hero" style="background-image: url(Test/1477405396_Baltimore.jpg)"
+ 				<div class="container"><!--
+ 					<form action="#" class="find-location">
+ 						<input type="text" placeholder="Find your location...">
+ 						<input type="submit" value="Find">
+ 					</form>
+ 					-->
+ 				</div>
+ 			</div>
+ 										 
+ 			<div class="forecast-table">
+ 				<div class="container">
+ 					<div class="forecast-container" style="display:none;" id="table">
+ 						<div class="today forecast">
+ 							<div class="forecast-header">
+ 								<div class="day">Current Temperature</div>
+ 								<div class="date" id="date" style ="display: none">
+ 								<script> var monthNames = ["January", "February", "March", "April", "May", "June",
+   								"July", "August", "September", "October", "November", "December"
+ 								];
+ 								var d = new Date();
+ 								var dateObj = new Date();
+ 								var day = dateObj.getDate();
+ 								document.write(monthNames[d.getMonth()]);
+ 								document.write("&nbsp;")
+ 								document.write(day)
+ 								</script>
+ 								</div>
+ 										
+ 							</div> <!-- .forecast-header -->
+ 							<div class="forecast-content">
+ 								<div class="location">Baltimore</div>
+ 								<div class="degree">
+ 									<div class="num" id = "temp1" style="display: none"> </div>
+ 								<div class="forecast-icon">
+ 								<img id = "cloudy" class ="cloudy" src="images/icons/icon-5.svg" width=90/>
+ 								</div>	
+ 							</div>
+ 							</div>
+ 						</div>
+ 						<div class="forecast">
+ 							<div class="forecast-header">
+ 								<div class ="day" id="day1"> 
+ 							</div>
+ 							</div> <!-- .forecast-header -->
+ 							<div class="forecast-content">
+ 								<div class="forecast-icon">
+ 									<img id ="cloudy1" class="cloudy1" src="images/icons/icon-5.svg" width=48/>
+ 								</div>
+ 								<div id ="tempz" class="degree cloudy1"><sup>o</sup></div>
+ 								<div id ="tempz1" class="cloudy1"> <small>33<sup>o</sup></small></div>
+ 							</div>
+ 						</div>
+ 						<div class="forecast">
+ 							<div class="forecast-header">
+ 								<div class ="day" id="day2">
+ 								
+ 							</div>
+ 							</div> <!-- .forecast-header -->
+ 							<div class="forecast-content">
+ 								<div class="forecast-icon">
+ 									<img id="cloudy2" class="cloudy1" src="images/icons/icon-2.svg" width=48/>
+ 								</div>
+ 								<div id="tempz2" class="degree cloudy1">50<sup>o</sup></div>
+ 								<div id ="tempz3" class="cloudy1"><small>30<sup>o</sup></small></div>
+ 							</div>
+ 						</div>
+ 						<div class="forecast">
+ 							<div class="forecast-header">
+ 								<div class ="day" id="day3">
+ 								
+ 							</div>
+ 							</div> <!-- .forecast-header -->
+ 							<div class="forecast-content">
+ 								<div class="forecast-icon">
+ 									<img id ="cloudy3" class="cloudy1" src="images/icons/icon-14.svg" width=48/>
+ 								</div>
+ 								<div id="tempz4" class="degree cloudy1">48<sup>o</sup></div>
+ 								<div id ="tempz5" class="cloudy1"><small>39<sup>o</sup></small></div>
+ 							</div>
+ 						</div>
+ 						<div class="forecast">
+ 							<div class="forecast-header">
+ 								<div class ="day" id="day4">
+ 								
+ 							</div>
+ 							</div> <!-- .forecast-header -->
+ 							<div class="forecast-content">
+ 								<div class="forecast-icon">
+ 									<img id ="cloudy4" class="cloudy1" src="images/icons/icon-3.svg" width=48/>
+ 								</div>
+ 								<div id="tempz6" class="degree cloudy1">51<sup>o</sup></div>
+ 								<div id ="tempz7" class="cloudy1"><small>34<sup>o</sup></small></div>
+ 							</div>
+ 						</div>
+ 						<div class="forecast">
+ 							<div class="forecast-header">
+ 								<div class ="day" id="day5">
+ 								
+ 							</div>
+ 							</div> <!-- .forecast-header -->
+ 							<div class="forecast-content">
+ 								<div class="forecast-icon">
+ 									<img id="cloudy5" class="cloudy1" src="images/icons/icon-3.svg" width=48/>
+ 								</div>
+ 								<div id="tempz8" class="degree cloudy1">54<sup>o</sup></div>
+ 								<div id ="tempz9" class="cloudy1"><small>32<sup>o</sup></small></div>
+ 							</div>
+ 						</div>
+ 						<div class="forecast">
+ 							<div class="forecast-header">
+ 								<div class ="day" id="day6">
+ 								
+ 							</div>
+ 							</div> <!-- .forecast-header -->
+ 							<div class="forecast-content">
+ 								<div class="forecast-icon">
+ 									<img id="cloudy6" class="cloudy1" src="images/icons/icon-14.svg" width=48/>
+ 								</div>
+ 								<div id="tempz10" class="degree cloudy">43<sup>o</sup></div>
+ 								<div id ="tempz11" class="cloudy1"><small>29<sup>o</sup></small></div>
+ 							</div>
+ 						</div>
+ 					</div>
+ 				</div>
+ 			</div>
+ 			<main class="main-content">
+ 				<div class="fullwidth-block">
+ 					<div class="container" style="display:none;" id="table1">
+ 						<h2 class="section-title">Live cameras</h2>
+ 						<div class="row">
+ 							<div class="col-md-3 col-sm-6">
+ 								<div class="live-camera"> <a href ="http://www.chart.state.md.us/video/video.php?feed=2f009e8a00e50039004606363d235daa" target="_blank">
+ 									<figure class="live-camera-cover"><img src="Test/Capture.PNG" alt=""></figure></a>
+ 									<h3 class="location">Baltimore</h3>
+ 									<small class="date">I-95 S/ I-695</small>
+ 								</div>
+ 							</div>
+ 							<div class="col-md-3 col-sm-6">
+ 								<div class="live-camera"> <a href ="http://www.chart.state.md.us/video/video.php?feed=0b017ae1019100e300441a366e230214" target="_blank">
+ 									<figure class="live-camera-cover"><img src="Test/capturetwo.PNG" alt=""></figure></a>
+ 									<h3 class="location">Baltimore</h3>
+ 									<small class="date">I-895 N/B</small>
+ 								</div>
+ 							</div>
+ 							<div class="col-md-3 col-sm-6">
+ 								<div class="live-camera"> <a href = "http://www.chart.state.md.us/video/video.php?feed=dd0157c42d7c001300503336c4235c0a" target="_blank">
+ 									<figure class="live-camera-cover"><img src="Test/bayb.PNG" alt=""></figure></a>
+ 									<h3 class="location">Bay Bridge</h3>
+ 									<small class="date">East</small>
+ 								</div>
+ 							</div>
+ 							<div class="col-md-3 col-sm-6">
+ 								<div class="live-camera"> <a href = "http://www.ocbound.com/ocean-gallery-boardwalk-webcam" target="_blank">
+ 									<figure class="live-camera-cover"><img src="Test/OCMD.PNG" alt=""></figure></a>
+ 									<h3 class="location">Ocean City Boardwalk</h3>
+ 									<small class="date">2nd Street</small>
+ 								</div>
+ 							</div>
+ 						</div>
+ 					</div>
+ 				</div>
+ 
+ 				<div class="fullwidth-block" data-bg-color="#262936">
+ 					<div class="container" style="display:none;" id="table2">
+ 						<div class="row">
+ 							<div class="col-md-4">
+ 								<div class="news">
+ 									<div class="date">Soon</div>
+ 									<h3><a href="#">Winter Making an Early Return?</a></h3>
+ 									<p>Future Information </p>
+ 								</div>
+ 							</div>
+ 							<div class="col-md-4">
+ 								<div class="news">
+ 									<div class="date">Soon</div>
+ 									<h3><a href="#">Winter Forecast</a> </h3>
+ 									<p>Future Information</p>
+ 								</div>
+ 							</div>
+ 							<div class="col-md-4">
+ 								<div class="news">
+ 									<div class="date">Soon</div>
+ 									<h3><a href="#">Future Information</a></h3>
+ 									<p>Future Information</p>
+ 						     </div>
+  			</main> <!-- .main-content -->
+  
+  			<footer class="site-footer">
+ -				<div class="container" id="table3">
+ -					<div class="row">
+ -						<div class="col-md-8">
+ -							<form action="#" class="subscribe-form">
+ -								<input type="text" placeholder="Enter your email to subscribe...">
+ -								<input type="submit" value="Subscribe">
+ -							</form>
+ - 						<div class="col-md-3 col-md-offset-1">
+ - 							<div class="social-links">
+ - 								<a href="#"><i class="fa fa-facebook"></i></a>
+ - 								<a href="#"><i class="fa fa-twitter"></i></a>
+ - 								<a href="#"><i class="fa fa-google-plus"></i></a>
+ - 								<a href="#"><i class="fa fa-pinterest"></i></a>
+ - 							</div>
+ - 						</div>
+ - 					</div>
+ +				<div>
+   
+   		                       <p class="colophon">For more info contact me on <a href ="https://www.twitter.com/Luciano___98" target="_blank">twitter</a></p>
+   				</div>
+ 			</footer> <!-- .site-footer -->
+ 		</div>
+ 		
+ 		<script src="jquery-3.2.1.min.js"></script>
+ 		<script src="plugins.js"></script>
+ 		<script src="app.js"></script>
+ 		<script> 
+ 		$(window).on('beforeunload', function() {
+    			$(window).scrollTop(0);
+ 		}); 
+ 		</script>
+ 		<script src="lucianosweather_jsfunctions-v0.1.js"></script>
+ 	
+ 	</body>
+ 
+ </html>
