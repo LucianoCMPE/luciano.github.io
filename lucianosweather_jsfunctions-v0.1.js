@@ -45,7 +45,7 @@
 		$("#cloudy5").show("slow");
 		$("#cloudy6").show("slow");
 		$("#tempz").fadeIn(1000).css("display","inline-block").html(Math.round(data.list[7].main.temp_max) + '<sup>o</sup>'); // start at the 2nd temp max 0 for each aray//
-		$("#tempz1").fadeIn(1000).html(Math.round(data.list[3].main.temp_min) + '<small><sup>o</sup></small>');
+		$("#tempz1").fadeIn(1000).html(Math.round(data.list[3].main.temp_min) + '<sup>o</sup>');
 		$("#tempz2").fadeIn(1000);
 		$("#tempz3").fadeIn(1000);
 		$("#tempz4").fadeIn(1000);
