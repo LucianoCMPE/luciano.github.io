@@ -39,7 +39,7 @@
 		$("#cloudy4").show("slow");
 		$("#cloudy5").show("slow");
 		$("#cloudy6").show("slow");
-		$("#tempz").fadeIn(1000).css("display","inline-block").html(Math.round(data.list[9].main.temp_max) + '<sup>o</sup>');
+		$("#tempz").fadeIn(1000).css("display","inline-block").html(Math.round(data.list[10].main.temp_max) + '<sup>o</sup>');
 		$("#tempz1").fadeIn(1000);
 		$("#tempz2").fadeIn(1000);
 		$("#tempz3").fadeIn(1000);
