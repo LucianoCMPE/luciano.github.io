@@ -1,4 +1,4 @@
-	$("#table3").hide().slideDown(1000);
+	$("#table3").slideDown(1000);
 	$("#table2").hide().slideDown(1000);
 	$("#table1").hide().slideDown(1000);
 	$("#table").hide().slideDown(1000).css("display","table");
