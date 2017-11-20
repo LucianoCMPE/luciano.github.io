@@ -31,6 +31,7 @@
     //data is the JSON string
 		//alert(JSON.stringify(main));
 		$("#temp1").fadeIn(1000).css("display","inline-block").html(Math.round(data.list[0].main.temp) + '<sup>o</sup>');
+		
 		$("#cloudy").show("slow");
 		$("#cloudy1").show("slow");
 		$("#cloudy2").show("slow");
@@ -38,7 +39,7 @@
 		$("#cloudy4").show("slow");
 		$("#cloudy5").show("slow");
 		$("#cloudy6").show("slow");
-		$("#tempz").fadeIn(1000);
+		$("#tempz").fadeIn(1000).css("display","inline-block").html(Math.round(data.list[1].main.temp_max) + '<sup>o</sup>');
 		$("#tempz1").fadeIn(1000);
 		$("#tempz2").fadeIn(1000);
 		$("#tempz3").fadeIn(1000);
