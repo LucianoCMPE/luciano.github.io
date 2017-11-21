@@ -33,16 +33,6 @@
 	//}
 	$.getJSON('http://api.openweathermap.org/data/2.5/weather?q=Baltimore,us&units=imperial&appid=924dbd1a7a384a1d6dfb73f3a1319631', function(data) {
 		$("#temp1").fadeIn(1000).css("display","inline-block").html(Math.round(data.main.temp) + '<sup>o</sup>');
-		$("#tempz2").fadeIn(1000);
-		$("#tempz3").fadeIn(1000);
-		$("#tempz4").fadeIn(1000);
-		$("#tempz5").fadeIn(1000);
-		$("#tempz6").fadeIn(1000);
-		$("#tempz7").fadeIn(1000);
-		$("#tempz8").fadeIn(1000);
-		$("#tempz9").fadeIn(1000);
-		$("#tempz10").fadeIn(1000);
-		$("#tempz11").fadeIn(1000);
 		$("#cloudy").show("slow");
 		$("#cloudy1").show("slow");
 		$("#cloudy2").show("slow");
@@ -63,7 +53,16 @@
 		//$("#tempz").fadeIn(1000).css("display","inline-block").html(Math.round(data.max_temp.datetime[1]) + '<sup>o</sup>'); // start at the 2nd temp max 0 for each aray//
 		//$("#tempz1").fadeIn(1000).html(Math.round(data.list[3].main.temp_min) + '<sup>o</sup>');
 		$("#tempz1").fadeIn(1000).html(Math.round(data.data[1].min_temp) + '<sup>o</sup>');
-		
+		$("#tempz2").fadeIn(1000).css("display","inline-block").html(Math.round(data.data[2].max_temp) + '<sup>o</sup>');
+		$("#tempz3").fadeIn(1000).html(Math.round(data.data[2].min_temp) + '<sup>o</sup>');
+		$("#tempz4").fadeIn(1000).css("display","inline-block").html(Math.round(data.data[3].max_temp) + '<sup>o</sup>');
+		$("#tempz5").fadeIn(1000).html(Math.round(data.data[3].min_temp) + '<sup>o</sup>');
+		$("#tempz6").fadeIn(1000).css("display","inline-block").html(Math.round(data.data[4].max_temp) + '<sup>o</sup>');
+		$("#tempz7").fadeIn(1000).html(Math.round(data.data[4].min_temp) + '<sup>o</sup>');
+		$("#tempz8").fadeIn(1000).css("display","inline-block").html(Math.round(data.data[5].max_temp) + '<sup>o</sup>');
+		$("#tempz9").fadeIn(1000).html(Math.round(data.data[5].min_temp) + '<sup>o</sup>');
+		$("#tempz10").fadeIn(1000).css("display","inline-block").html(Math.round(data.data[5].max_temp) + '<sup>o</sup>');
+		$("#tempz11").fadeIn(1000).html(Math.round(data.data[5].min_temp) + '<sup>o</sup>');
 		
 });
 	
