@@ -61,10 +61,10 @@
 		$("#tempz9").fadeIn(1000);
 		$("#tempz10").fadeIn(1000);
 		$("#tempz11").fadeIn(1000);
-		setTimeout(testz, 60*60*1000);
+		
 		
 });
-	})();
+	}
 		
 	//alert(weather_data);
 	//alert(weather_data.main.temp);
