@@ -61,8 +61,8 @@
 		$("#tempz7").fadeIn(1000).html(Math.round(data.data[4].min_temp) + '<sup>o</sup>');
 		$("#tempz8").fadeIn(1000).css("display","inline-block").html(Math.round(data.data[5].max_temp) + '<sup>o</sup>');
 		$("#tempz9").fadeIn(1000).html(Math.round(data.data[5].min_temp) + '<sup>o</sup>');
-		$("#tempz10").fadeIn(1000).css("display","inline-block").html(Math.round(data.data[5].max_temp) + '<sup>o</sup>');
-		$("#tempz11").fadeIn(1000).html(Math.round(data.data[5].min_temp) + '<sup>o</sup>');
+		$("#tempz10").fadeIn(1000).css("display","inline-block").html(Math.round(data.data[6].max_temp) + '<sup>o</sup>');
+		$("#tempz11").fadeIn(1000).html(Math.round(data.data[6].min_temp) + '<sup>o</sup>');
 		
 });
 	
