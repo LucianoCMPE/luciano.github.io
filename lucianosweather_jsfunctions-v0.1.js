@@ -36,7 +36,7 @@
 		$("#temp1").fadeIn(1000).css("display","inline-block").html(Math.round(data.main.temp) + '<sup>o</sup>');
 });
 	
-	$.getJSON('http://api.openweathermap.org/data/2.5/forecast?q=Baltimore,us&units=imperial&appid=924dbd1a7a384a1d6dfb73f3a1319631', function(data) {
+	$.getJSON('http://api.weatherbit.io/v2.0/forecast/daily?city=Baltimore,MD&days=16&units=I&key=b079da81f71d4ebba36ee3dc544a3931', function(data) {
     //data is the JSON string
 		//alert(JSON.stringify(main));
 		$("#cloudy").show("slow");
@@ -46,7 +46,7 @@
 		$("#cloudy4").show("slow");
 		$("#cloudy5").show("slow");
 		$("#cloudy6").show("slow");
-		$("#tempz").fadeIn(1000).css("display","inline-block").html(Math.round(data.list[6].main.temp_max) + '<sup>o</sup>'); // start at the 2nd temp max 0 for each aray//
+		$("#tempz").fadeIn(1000).css("display","inline-block").html(Math.round(max_temp[0]) + '<sup>o</sup>'); // start at the 2nd temp max 0 for each aray//
 		$("#tempz1").fadeIn(1000).html(Math.round(data.list[3].main.temp_min) + '<sup>o</sup>');
 		$("#tempz2").fadeIn(1000);
 		$("#tempz3").fadeIn(1000);
