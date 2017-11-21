@@ -64,7 +64,7 @@
 		
 });	
 		  }
-	setInterval(testz, 60*60*1000);
+	setInterval(testz, 900000);
 	//alert(weather_data);
 	//alert(weather_data.main.temp);
 	//$("#temp1").text(weather_data.main.temp);
