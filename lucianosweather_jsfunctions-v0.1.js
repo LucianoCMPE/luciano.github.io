@@ -53,8 +53,8 @@
 });
 	
 	//$.getJSON('http://api.weatherbit.io/v2.0/forecast/daily?city=Baltimore,MD&days=5&units=I&key=b079da81f71d4ebba36ee3dc544a3931', function(data) {
-	(function testz() {
-	$.getJSON('http://api.weatherbit.io/v2.0/forecast/daily?city=Baltimore,MD&days=5&units=I&key=b079da81f71d4ebba36ee3dc544a3931', function(data) {	
+	function testz() {
+	$.getJSON('http://api.weatherbit.io/v2.0/forecast/daily?city=Baltimore,MD&days=16&units=I&key=b079da81f71d4ebba36ee3dc544a3931', function(data) {	
    	 //data is the JSON string
 		//alert(JSON.stringify(main));
 		$("#tempz").fadeIn(1000).css("display","inline-block").html(Math.round(data.data[1].max_temp) + '<sup>o</sup>');
@@ -65,7 +65,7 @@
 		
 		
 });
-	});
+	}
 		
 	//alert(weather_data);
 	//alert(weather_data.main.temp);
