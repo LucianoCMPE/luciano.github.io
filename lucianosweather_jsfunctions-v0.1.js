@@ -1,13 +1,6 @@
 	$(window.onbeforeunload = function () {
   			window.scrollTo(0, 0);
 		});	
-	$("#cloudy").show("slow");
-	$("#cloudy1").show("slow");
-	$("#cloudy2").show("slow");
-	$("#cloudy3").show("slow");
-	$("#cloudy4").show("slow");
-	$("#cloudy5").show("slow");
-	$("#cloudy6").show("slow");
 	$("#table4").hide().fadeIn();
 	$("#table3").hide().slideDown(1000);
 	$("#table2").hide().slideDown(1000);
@@ -40,6 +33,13 @@
 	//}
 	$.getJSON('http://api.openweathermap.org/data/2.5/weather?q=Baltimore,us&units=imperial&appid=924dbd1a7a384a1d6dfb73f3a1319631', function(data) {
 		$("#temp1").fadeIn(1000).css("display","inline-block").html(Math.round(data.main.temp) + '<sup>o</sup>');
+		$("#cloudy").show("slow");
+		$("#cloudy1").show("slow");
+		$("#cloudy2").show("slow");
+		$("#cloudy3").show("slow");
+		$("#cloudy4").show("slow");
+		$("#cloudy5").show("slow");
+		$("#cloudy6").show("slow");
 });
 	
 	//$.getJSON('http://api.weatherbit.io/v2.0/forecast/daily?city=Baltimore,MD&days=5&units=I&key=b079da81f71d4ebba36ee3dc544a3931', function(data) {
