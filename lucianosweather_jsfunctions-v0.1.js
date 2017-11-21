@@ -50,6 +50,7 @@
 		$("#cloudy4").show("slow");
 		$("#cloudy5").show("slow");
 		$("#cloudy6").show("slow");
+		var changed = false;
 });
 	
 	//$.getJSON('http://api.weatherbit.io/v2.0/forecast/daily?city=Baltimore,MD&days=5&units=I&key=b079da81f71d4ebba36ee3dc544a3931', function(data) {
