@@ -61,7 +61,7 @@
 		$("#tempz9").fadeIn(1000);
 		$("#tempz10").fadeIn(1000);
 		$("#tempz11").fadeIn(1000);
-}), 360000);
+}), 5000000000000000000);
 	//alert(weather_data);
 	//alert(weather_data.main.temp);
 	//$("#temp1").text(weather_data.main.temp);
