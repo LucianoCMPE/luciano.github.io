@@ -1,3 +1,9 @@
+	
+
+	
+
+	
+
 	$(window.onbeforeunload = function () {
   			window.scrollTo(0, 0);
 		});	
@@ -60,8 +66,20 @@
 		$("#tempz8").fadeIn(1000);
 		$("#tempz9").fadeIn(1000);
 		$("#tempz10").fadeIn(1000);
-		$("#tempz11").fadeIn(1000);		
+		$("#tempz11").fadeIn(1000);
+		window.list_data = data;
 });
+	// retrieve
+list_data = $.cookie("list_data");
+if (list_data) {
+    // have to de-serialize from string to object
+    list_data = JSON.parse(list_data);
+} else {
+    // doesn't exist in cookie, make AJAX call
+}
+
+// save
+$.cookie("list_data", JSON.stringify(data));
 	//alert(weather_data);
 	//alert(weather_data.main.temp);
 	//$("#temp1").text(weather_data.main.temp);
