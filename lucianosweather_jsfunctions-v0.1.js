@@ -39,7 +39,7 @@
 		  canvas.height = img.height;
 		  var ctx = canvas.getContext("2d");
 		  ctx.drawImage(img, 0, 0);
-		  var dataURL = canvas.toDataURL("image/png");
+		  var dataURL = canvas.toDataURL();
 		}
 		var base64 = getBase64Image(document.getElementById("cloudy"));
 
