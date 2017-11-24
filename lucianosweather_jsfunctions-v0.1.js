@@ -41,8 +41,7 @@
 		  ctx.drawImage(img, 0, 0);
 		  var dataURL = canvas.toDataURL();
 		}
-		getBase64Image(document.getElementById("cloudy"));
-
+		$('#cloudy').show("slow");
 		$("#cloudy1").show("slow");
 		$("#cloudy2").show("slow");
 		$("#cloudy3").show("slow");
