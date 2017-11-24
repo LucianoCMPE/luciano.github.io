@@ -37,7 +37,7 @@
 		  canvas.height = img.height;
 		  var ctx = canvas.getContext("2d");
 		  ctx.drawImage(img, 0, 0);
-		  var dataURL = canvas.toDataURL(http://openweathermap.org/img/w/);
+		  var dataURL = canvas.toDataURL("http://openweathermap.org/img/w/");
 		}
 		
 	$.getJSON('http://api.openweathermap.org/data/2.5/weather?q=Baltimore,us&units=imperial&appid=924dbd1a7a384a1d6dfb73f3a1319631', function(data) {
