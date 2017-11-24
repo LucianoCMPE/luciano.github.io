@@ -1237,7 +1237,7 @@ form textarea {
   margin-bottom: 50px;}
   .forecast-container .forecast {
     display: table-cell;
-    vertical-align: -webkit-baseline-middle; }
+    vertical-align: top; }
     .forecast-container .forecast:nth-child(even) {
       background-color: #262936; }
     @media screen and (max-width: 990px) {
