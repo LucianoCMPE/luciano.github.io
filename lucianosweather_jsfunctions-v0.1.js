@@ -38,6 +38,7 @@
 		var currentWeatherCondition = data.weather[0].main;
 		if(currentWeatherCondition === "Clouds"){
 			$('#cloudy').attr("src","images/icons/icon-5.svg");
+			alert("its cloudy");
 		}
 		$('#cloudy').show("slow");
 		$("#cloudy1").show("slow");
