@@ -41,7 +41,6 @@
 		}
 		if(currentWeatherCondition === "Clear"){
 			$('#cloudy').attr("src","images/icons/icon-2.svg");
-			alert("its clear");
 		}
 		$('#cloudy').show("slow");
 		$("#cloudy1").show("slow");
@@ -55,7 +54,7 @@
 	
 	//$.getJSON('http://api.weatherbit.io/v2.0/forecast/daily?city=Baltimore,MD&days=5&units=I&key=b079da81f71d4ebba36ee3dc544a3931', function(data) {
 	
-	/*$.getJSON('http://api.weatherbit.io/v2.0/forecast/daily?city=Towson,MD&days=16&units=I&key=b079da81f71d4ebba36ee3dc544a3931', function(data) {	
+	$.getJSON('http://api.weatherbit.io/v2.0/forecast/daily?city=Towson,MD&days=16&units=I&key=b079da81f71d4ebba36ee3dc544a3931', function(data) {	
    	 //data is the JSON string
 		//alert(JSON.stringify(main));
 		//JSON.stringify(orig) == JSON.stringify(current) var changed = false
@@ -74,7 +73,7 @@
 		$("#tempz10").fadeIn(1000).html(Math.round(data.data[6].max_temp) + '<sup>o</sup>');
 		$("#tempz11").fadeIn(1000).html(Math.round(data.data[6].min_temp) + '<sup>o</sup>');
 		
-});*/
+});
 	
 		
 	//alert(weather_data);
