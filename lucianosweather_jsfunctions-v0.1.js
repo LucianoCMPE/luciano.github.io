@@ -41,6 +41,7 @@
 		}
 		if(currentWeatherCondition === "Clear"){
 			$('#cloudy').attr("src","images/icons/icon-2.svg");
+			alert("its clear");
 		}
 		$('#cloudy').show("slow");
 		$("#cloudy1").show("slow");
