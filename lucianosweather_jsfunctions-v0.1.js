@@ -45,6 +45,12 @@
 		if(currentWeatherCondition === "Sunny"){
 			$('#cloudy').attr("src","images/icons/icon-2.svg");
 		}
+		if(currentWeatherCondition === "light snow"){
+			$('#cloudy').attr("src","images/icons/icon-14.svg");
+		}
+		if(currentWeatherCondition === "snow"){
+			$('#cloudy').attr("src","images/icons/icon-14.svg");
+		}
 		$('#cloudy').show("slow");
 		$("#cloudy1").show("slow");
 		$("#cloudy2").show("slow");
