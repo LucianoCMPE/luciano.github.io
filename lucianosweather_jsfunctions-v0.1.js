@@ -37,7 +37,7 @@
 		$("#temp1").fadeIn(1000).css("display","inline-block").html(Math.round(data.main.temp) + '<sup>o</sup>');
 		var currentWeatherCondition = data.weather[0].main;
 		if(currentWeatherCondition === "Clouds"){
-			$('#cloudy').hide().attr("src","images/icons/icon-5.svg");
+			$('#cloudy').show("slow").attr("src","images/icons/icon-5.svg");
 		}
 		if(currentWeatherCondition === "Clear"){
 			$('#cloudy').attr("src","images/icons/icon-2.svg");
@@ -51,7 +51,7 @@
 		if(currentWeatherCondition === "Snow"){
 			$('#cloudy').attr("src","images/icons/icon-14.svg");
 		}
-		$('#cloudy').hide().show("slow");
+		$('#cloudy').show("slow");
 		$("#cloudy1").show("slow");
 		$("#cloudy2").show("slow");
 		$("#cloudy3").show("slow");
