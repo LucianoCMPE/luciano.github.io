@@ -1,3 +1,4 @@
+	alert("Currently updating site so issues will be resolved. Working to resolve forecast icons not updating correctly");
 	$(window.onbeforeunload = function () {
   			window.scrollTo(0, 0);
 		});	
@@ -59,7 +60,7 @@
 		$("#cloudy4").show("slow");
 		$("#cloudy5").show("slow");
 		$("#cloudy6").show("slow");
-		alert("Currently updating site so issues will be resolved. Working to resolve forecast icons not updating correctly");
+		
 		
 });
 	
