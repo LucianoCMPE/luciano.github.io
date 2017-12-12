@@ -1,4 +1,3 @@
-	alert("currently updating site so issues will be resolved. working to resolve forecast icons not updating correctly");
 	$(window.onbeforeunload = function () {
   			window.scrollTo(0, 0);
 		});	
@@ -164,3 +163,4 @@ $(function(){
 	$("#day6").fadeIn(1000).text(s);
 });  
 	
+alert("Currently updating site so issues will be resolved. /nWorking to resolve forecast icons not updating correctly");
