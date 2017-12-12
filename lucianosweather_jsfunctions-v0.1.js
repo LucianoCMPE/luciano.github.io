@@ -1,4 +1,3 @@
-	alert("Currently updating site so issues will be resolved. Working to resolve forecast icons not updating correctly");
 	$(window.onbeforeunload = function () {
   			window.scrollTo(0, 0);
 		});	
