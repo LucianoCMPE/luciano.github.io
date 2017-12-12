@@ -59,6 +59,7 @@
 		$("#cloudy4").show("slow");
 		$("#cloudy5").show("slow");
 		$("#cloudy6").show("slow");
+		alert("Currently updating site so issues will be resolved. Working to resolve forecast icons not updating correctly");
 		
 });
 	
@@ -163,4 +164,4 @@ $(function(){
 	$("#day6").fadeIn(1000).text(s);
 });  
 	
-alert("Currently updating site so issues will be resolved. /nWorking to resolve forecast icons not updating correctly");
+
