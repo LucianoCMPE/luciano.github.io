@@ -38,7 +38,7 @@
 		$("#temp1").fadeIn(1000).css("display","inline-block").html(Math.round(data.main.temp) + '<sup>o</sup>');
 		var currentWeatherCondition = data.weather[0].main;
 		if(currentWeatherCondition === "Clouds"){
-			$('#cloudy').hide().attr("src","images/icons/icon-5.svg").show("slow");
+			$('#cloudy').attr("src","images/icons/icon-5.svg");
 			
 		}
 		if(currentWeatherCondition === "Clear"){
