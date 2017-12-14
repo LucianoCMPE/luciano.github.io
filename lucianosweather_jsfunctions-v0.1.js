@@ -52,7 +52,7 @@
 		if(currentWeatherCondition === "Snow"){
 			$('#cloudy').attr("src","images/icons/icon-14.svg");
 		}
-		$('#cloudy').hide().show("slow");
+		$('#cloudy').show("slow");
 		$("#cloudy1").show("slow");
 		$("#cloudy2").show("slow");
 		$("#cloudy3").show("slow");
