@@ -55,6 +55,9 @@
 		if(currentWeatherCondition === "Mist"){
 			$('#cloudy').attr("src","images/icons/icon-7.svg");
 		}
+		if(currentWeatherCondition === "Rain"){
+			$('#cloudy').attr("src","images/icons/icon-14.svg");
+		}
 		$('#cloudy').show("slow");
 		$("#cloudy1").show("slow");
 		$("#cloudy2").show("slow");
