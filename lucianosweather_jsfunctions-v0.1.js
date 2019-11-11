@@ -58,6 +58,7 @@
 		if(currentWeatherCondition === "Rain"){
 			$('#cloudy').attr("src","images/icons/icon-9.svg");
 		}
+		$('#cloudy').show("slow");
 });
 	$.getJSON('http://api.weatherbit.io/v2.0/forecast/daily?city=Towson,MD&days=16&units=I&key=b079da81f71d4ebba36ee3dc544a3931', function(data) {
 		var currentDayCondition = data.weather[1].description;
@@ -65,7 +66,7 @@
 			$('#cloudy1').attr("src", "images/icons/icon-9.svg");
 		}
 		alert("Hello! I am an alert box!!");
-		$('#cloudy').show("slow");
+		
 		$("#cloudy1").show("slow");
 		$("#cloudy2").show("slow");
 		$("#cloudy3").show("slow");
