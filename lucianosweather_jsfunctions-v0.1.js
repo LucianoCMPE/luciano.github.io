@@ -69,10 +69,10 @@
 			$('#cloudy1').attr("src", "images/icons/icon-5.svg");
 		}
 		if(currentDayCondition == "Overcast clouds"){
-			$('#cloudy1').attr("src", "images/icons/icon-9.svg");
+			$('#cloudy1').attr("src", "images/icons/icon-5.svg");
 		}
 		if(currentDayCondition == "Broken clouds"){
-			$('#cloudy1').attr("src", "images/icons/icon-9.svg");
+			$('#cloudy1').attr("src", "images/icons/icon-5.svg");
 		}		
 		
 		$("#cloudy1").show("slow");
