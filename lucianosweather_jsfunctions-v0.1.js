@@ -61,6 +61,7 @@
 		$('#cloudy').show("slow");
 });
 	$.getJSON('http://api.weatherbit.io/v2.0/forecast/daily?city=Towson,MD&days=16&units=I&key=b079da81f71d4ebba36ee3dc544a3931', function(data) {
+		//FIRST DAY FORECAST (GENERATES ICON FOR DAY 1)
 		var currentDayCondition = data.data[1].weather.code
 		
 		if((currentDayCondition > 299) && (currentDayCondition < 523)){
@@ -83,6 +84,7 @@
 			$('#cloudy1').attr("src", "images/icons/icon-5.svg");
 		}
 		
+		//SECOND DAY FORECAST (GENERATES ICON FOR DAY 2)
 		currentDayCondition = data.data[2].weather.code
 		
 		if((currentDayCondition > 299) && (currentDayCondition < 523)){
@@ -105,6 +107,28 @@
 			$('#cloudy2').attr("src", "images/icons/icon-5.svg");
 		}
 		
+		//THIRD DAY FORECAST (GENERATES ICON FOR DAY 3)
+		currentDayCondition = data.data[3].weather.code
+		
+		if((currentDayCondition > 299) && (currentDayCondition < 523)){
+			$('#cloudy3').attr("src", "images/icons/icon-9.svg");
+		}
+		
+		if((currentDayCondition > 599) && (currentDayCondition < 611)){
+			$('#cloudy3').attr("src", "images/icons/icon-14.svg");
+		}	
+		
+		if(currentDayCondition == 800){
+			$('#cloudy3').attr("src", "images/icons/icon-2.svg");
+		}
+		
+		if((currentDayCondition == 801) || (currentDayCondition == 802)){
+			$('#cloudy3').attr("src", "images/icons/icon-3.svg");
+		}
+		
+		if((currentDayCondition > 802) && (currentDayCondition < 805)){
+			$('#cloudy2').attr("src", "images/icons/icon-5.svg");
+		}
 		$("#cloudy1").show("slow");
 		$("#cloudy2").show("slow");
 		$("#cloudy3").show("slow");
