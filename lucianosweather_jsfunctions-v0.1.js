@@ -68,7 +68,7 @@
 		}
 		
 		if((currentDayCondition > 599) && (currentDayCondition < 611)){
-			$('#cloudy1').attr("src", "images/icons/icon-9.svg");
+			$('#cloudy1').attr("src", "images/icons/icon-14.svg");
 		}	
 		
 		if(currentDayCondition == 800){
@@ -81,6 +81,28 @@
 		
 		if((currentDayCondition > 802) && (currentDayCondition < 805)){
 			$('#cloudy1').attr("src", "images/icons/icon-5.svg");
+		}
+		
+		currentDayCondition = data.data[2].weather.code
+		
+		if((currentDayCondition > 299) && (currentDayCondition < 523)){
+			$('#cloudy2').attr("src", "images/icons/icon-9.svg");
+		}
+		
+		if((currentDayCondition > 599) && (currentDayCondition < 611)){
+			$('#cloudy2').attr("src", "images/icons/icon-14.svg");
+		}	
+		
+		if(currentDayCondition == 800){
+			$('#cloudy2').attr("src", "images/icons/icon-2.svg");
+		}
+		
+		if((currentDayCondition == 801) || (currentDayCondition == 802)){
+			$('#cloudy2').attr("src", "images/icons/icon-3.svg");
+		}
+		
+		if((currentDayCondition > 802) && (currentDayCondition < 805)){
+			$('#cloudy2').attr("src", "images/icons/icon-5.svg");
 		}
 		
 		$("#cloudy1").show("slow");
