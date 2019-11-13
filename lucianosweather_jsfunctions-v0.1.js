@@ -127,7 +127,7 @@
 		}
 		
 		if((currentDayCondition > 802) && (currentDayCondition < 805)){
-			$('#cloudy2').attr("src", "images/icons/icon-5.svg");
+			$('#cloudy3').attr("src", "images/icons/icon-5.svg");
 		}
 		$("#cloudy1").show("slow");
 		$("#cloudy2").show("slow");
