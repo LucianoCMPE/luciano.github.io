@@ -83,6 +83,8 @@
 		if((currentDayCondition > 802) && (currentDayCondition < 805)){
 			$('#cloudy1').attr("src", "images/icons/icon-5.svg");
 		}
+		/////////////////////////////////////////////////////////////
+		
 		
 		//SECOND DAY FORECAST (GENERATES ICON FOR DAY 2)
 		currentDayCondition = data.data[2].weather.code
@@ -106,6 +108,8 @@
 		if((currentDayCondition > 802) && (currentDayCondition < 805)){
 			$('#cloudy2').attr("src", "images/icons/icon-5.svg");
 		}
+	
+		/////////////////////////////////////////////////////////////
 		
 		//THIRD DAY FORECAST (GENERATES ICON FOR DAY 3)
 		currentDayCondition = data.data[3].weather.code
@@ -128,6 +132,83 @@
 		
 		if((currentDayCondition > 802) && (currentDayCondition < 805)){
 			$('#cloudy3').attr("src", "images/icons/icon-5.svg");
+		}
+		
+		///////////////////////////////////////////////////////////////////////////////
+		
+		
+		//FOURTH DAY FORECAST (GENERATES ICON FOR DAY 4)
+		currentDayCondition = data.data[4].weather.code
+		
+		if((currentDayCondition > 299) && (currentDayCondition < 523)){
+			$('#cloudy4').attr("src", "images/icons/icon-9.svg");
+		}
+		
+		if((currentDayCondition > 599) && (currentDayCondition < 611)){
+			$('#cloudy4').attr("src", "images/icons/icon-14.svg");
+		}	
+		
+		if(currentDayCondition == 800){
+			$('#cloudy4').attr("src", "images/icons/icon-2.svg");
+		}
+		
+		if((currentDayCondition == 801) || (currentDayCondition == 802)){
+			$('#cloudy4').attr("src", "images/icons/icon-3.svg");
+		}
+		
+		if((currentDayCondition > 802) && (currentDayCondition < 805)){
+			$('#cloudy4').attr("src", "images/icons/icon-5.svg");
+		}
+		///////////////////////////////////////////////////////////////////
+		
+		
+		//FIFTH DAY FORECAST (GENERATES ICON FOR DAY 5)
+		currentDayCondition = data.data[5].weather.code
+		
+		if((currentDayCondition > 299) && (currentDayCondition < 523)){
+			$('#cloudy5').attr("src", "images/icons/icon-9.svg");
+		}
+		
+		if((currentDayCondition > 599) && (currentDayCondition < 611)){
+			$('#cloudy5').attr("src", "images/icons/icon-14.svg");
+		}	
+		
+		if(currentDayCondition == 800){
+			$('#cloudy5').attr("src", "images/icons/icon-2.svg");
+		}
+		
+		if((currentDayCondition == 801) || (currentDayCondition == 802)){
+			$('#cloudy5').attr("src", "images/icons/icon-3.svg");
+		}
+		
+		if((currentDayCondition > 802) && (currentDayCondition < 805)){
+			$('#cloudy5').attr("src", "images/icons/icon-5.svg");
+		}
+		
+		///////////////////////////////////////////////////////////////////
+		
+		
+		//SIXTH DAY FORECAST (GENERATES ICON FOR DAY 6)
+		currentDayCondition = data.data[6].weather.code
+		
+		if((currentDayCondition > 299) && (currentDayCondition < 523)){
+			$('#cloudy6').attr("src", "images/icons/icon-9.svg");
+		}
+		
+		if((currentDayCondition > 599) && (currentDayCondition < 611)){
+			$('#cloudy6').attr("src", "images/icons/icon-14.svg");
+		}	
+		
+		if(currentDayCondition == 800){
+			$('#cloudy6').attr("src", "images/icons/icon-2.svg");
+		}
+		
+		if((currentDayCondition == 801) || (currentDayCondition == 802)){
+			$('#cloudy6').attr("src", "images/icons/icon-3.svg");
+		}
+		
+		if((currentDayCondition > 802) && (currentDayCondition < 805)){
+			$('#cloudy6').attr("src", "images/icons/icon-5.svg");
 		}
 		$("#cloudy1").show("slow");
 		$("#cloudy2").show("slow");
