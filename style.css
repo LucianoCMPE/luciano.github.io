@@ -1270,6 +1270,22 @@ form textarea {
       .forecast-container .forecast.today .degree .num, .forecast-container .forecast.today .degree .forecast-icon {
         display: inline-block;
         vertical-align: middle; }
+      .forecast-icon .forecasttext {
+          visibility: hidden;
+          width: 120px;
+          background-color: black;
+          color: #fff;
+          text-align: center;
+          border-radius: 6px;
+          padding: 5px 0;
+
+         /* Position the tooltip */
+          position: absolute;
+          z-index: 1;
+}
+      .forecast-icon:hover .forecasttext {
+          visibility: visible;
+}
       .forecast-container .forecast.today .degree .num {
         font-size: 90px;
         font-size: 6.4285714286rem;
