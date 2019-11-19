@@ -1273,7 +1273,7 @@ form textarea {
       .forecast-icon .forecasttext {
           visibility: hidden;
           width: 120px;
-          background-color: black;
+          background-color: #1E202C;
           color: #fff;
           text-align: center;
           border-radius: 6px;
