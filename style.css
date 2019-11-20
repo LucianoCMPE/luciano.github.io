@@ -1272,11 +1272,11 @@ form textarea {
         vertical-align: middle; }
       .forecast-icon .forecasttext {
           visibility: hidden;
-          width: 200px; //120
+          width: 160px; //120
           background-color: #323544;
           color: #fff;
           text-align: center;
-          border-radius: 6px;
+          border-radius: 4px;
           padding: 2px 0; //5
 
          /* Position the tooltip */
