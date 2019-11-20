@@ -1272,7 +1272,7 @@ form textarea {
         vertical-align: middle; }
       .forecast-icon .forecasttext {
           visibility: hidden;
-          width: 120px; //120
+          width: 135px; //120
           background-color: #323544;
           color: #fff;
           text-align: center;
