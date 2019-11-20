@@ -1284,6 +1284,7 @@ form textarea {
           z-index: 100;
 }
       .forecast-icon:hover .forecasttext {
+          transition: 0.3s ease;
           visibility: visible;
 }
       .forecast-icon:hover > #cloudy {
