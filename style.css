@@ -1271,7 +1271,7 @@ form textarea {
         display: inline-block;
         vertical-align: middle; }
       .forecast-icon .forecasttext {
-          visibility: hidden;
+          opacity: 0;
           width: 135px; //120
           background-color: #323544;
           color: #fff;
@@ -1282,10 +1282,11 @@ form textarea {
          /* Position the tooltip */
           position: absolute;
           z-index: 100;
-}
-      .forecast-icon:hover .forecasttext {
           transition: 0.3s ease;
-          visibility: visible;
+}
+
+      .forecast-icon:hover .forecasttext {
+          opacity: 1;
 }
       .forecast-icon:hover > #cloudy {
         transition: 0.3s ease;
