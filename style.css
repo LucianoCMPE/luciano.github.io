@@ -1280,7 +1280,7 @@ form textarea {
           padding: 2px 0; //5
 
          /* Position the tooltip */
-          position: relative;
+          position: static;
           z-index: 1;
 }
       .forecast-icon:hover .forecasttext {
