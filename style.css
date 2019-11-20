@@ -1231,7 +1231,7 @@ form textarea {
   display: table;
   table-layout: fixed;
   width: 100%;
-  overflow: hidden;
+  overflow: visible;
   border-radius: 10px; 
   margin-top: -150px;
   margin-bottom: 50px;}
@@ -1262,7 +1262,7 @@ form textarea {
       .forecast-container .forecast.today .forecast-content {
         text-align: left;
         padding-top: 20px;
-        padding-bottom: 20px; }
+        padding-bottom: 50px; }
       .forecast-container .forecast.today .location {
         font-size: 18px;
         font-size: 1.2857142857em;
@@ -1277,7 +1277,7 @@ form textarea {
           color: #fff;
           text-align: center;
           border-radius: 4px;
-          padding: 2px 0; //5
+          padding: 1px 0; //5
 
          /* Position the tooltip */
           position: absolute;
