@@ -1285,8 +1285,10 @@ form textarea {
           z-index: 100;
 }
       .forecast-icon:hover .forecasttext {
-          opacity: 0.6;
           visibility: visible;
+}
+      .forecast-icon:hover .forecast-icon{
+        opacity: 0.6;
 }
       .forecast-container .forecast.today .degree .num {
         font-size: 90px;
