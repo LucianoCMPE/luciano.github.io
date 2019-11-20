@@ -1272,6 +1272,8 @@ form textarea {
         vertical-align: middle; }
       .forecast-icon .forecasttext {
           visibility: hidden;
+          transition: width 2s;
+          -webkit-transition: width 2s;
           width: 135px; //120
           background-color: #323544;
           color: #fff;
