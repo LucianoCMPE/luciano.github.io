@@ -1282,7 +1282,9 @@ form textarea {
          /* Position the tooltip */
           position: absolute;
           z-index: 100;
+          transition: 0.3s ease;
 }
+
       .forecast-icon:hover .forecasttext {
           opacity: 1;
 }
