@@ -1288,11 +1288,10 @@ form textarea {
       .forecast-icon:hover .forecasttext {
           opacity: 1;
 }
-      .forecast-icon > * {
-        transition: all 0.3s ease;
-      }
+
 
       .forecast-icon:hover > #cloudy {
+        transition: 0.5s ease;
         opacity: 0.5;
 }
       .forecast-container .forecast.today .degree .num {
