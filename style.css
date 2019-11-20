@@ -1272,8 +1272,7 @@ form textarea {
         vertical-align: middle; }
       .forecast-icon .forecasttext {
           visibility: hidden;
-          transition: width 2s;
-          -webkit-transition: width 2s;
+          transition: 0.3s;
           width: 135px; //120
           background-color: #323544;
           color: #fff;
@@ -1286,6 +1285,7 @@ form textarea {
           z-index: 100;
 }
       .forecast-icon:hover .forecasttext {
+          opacity: 0.6;
           visibility: visible;
 }
       .forecast-container .forecast.today .degree .num {
