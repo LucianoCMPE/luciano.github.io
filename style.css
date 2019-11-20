@@ -1287,8 +1287,8 @@ form textarea {
       .forecast-icon:hover .forecasttext {
           visibility: visible;
 }
-      .forecast-icon:hover .forecast-icon{
-        opacity: 0.1;
+      .forecast-icon:hover > #cloudy {
+        opacity: 0.5;
 }
       .forecast-container .forecast.today .degree .num {
         font-size: 90px;
