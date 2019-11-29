@@ -33,33 +33,35 @@
 	//}
 	
 		
-	$.getJSON('http://api.openweathermap.org/data/2.5/weather?q=Baltimore,us&units=imperial&appid=924dbd1a7a384a1d6dfb73f3a1319631', function(data) {
-		$("#temp1").fadeIn(1000).css("display","inline-block").html(Math.round(data.main.temp) + '<sup>o</sup>');
+	$.getJSON('http://api.weatherbit.io/v2.0/current?city=Towson,MD&days=16&units=I&key=b079da81f71d4ebba36ee3dc544a3931', function(data) {
+		$("#temp1").fadeIn(1000).css("display","inline-block").html(Math.round(data.temp) + '<sup>o</sup>');
 		
-		$(".forecast-icon > .forecasttext").html(`<div class = "forecasttext" style = "font-size:medium"> Humidity: ${data.main.humidity}%<br /> Wind Speed: ${Math.round(data.wind.speed)} mph</div>`);
+		//$(".forecast.today > .highlowtemp").html(`<div class = "highlowtemp" style = "font-size:medium"> High: ${data.rh}%<br /> Wind Speed: ${Math.round(data.wind_spd)} mph</div>`);
 		
-		var currentWeatherCondition = data.weather[0].main;
-		if(currentWeatherCondition === "Clouds"){
-			$('#cloudy').attr("src","images/icons/icon-5.svg");
-			
+		
+		$(".forecast-icon > .forecasttext").html(`<div class = "forecasttext" style = "font-size:medium"> Humidity: ${data.rh}%<br /> Wind Speed: ${Math.round(data.wind_spd)} mph</div>`);
+		
+		var currentWeatherCondition = data.weather[1].main;
+		
+		if((currentWeatherCondition > 299) && (currentWeatherCondition < 523)){
+			$('#cloudy1').attr("src", "images/icons/icon-9.svg");
 		}
-		if(currentWeatherCondition === "Clear"){
-			$('#cloudy').attr("src","images/icons/icon-2.svg");
+		
+		if((currentWeatherCondition > 599) && (currentWeatherCondition < 611)){
+			$('#cloudy1').attr("src", "images/icons/icon-14.svg");
+		}	
+		
+		if(currentWeatherCondition == 800){
+			$('#cloudy1').attr("src", "images/icons/icon-2.svg");
 		}
-		if(currentWeatherCondition === "Sunny"){
-			$('#cloudy').attr("src","images/icons/icon-2.svg");
+		
+		if((currentWeatherCondition == 801) || (currentWeatherCondition == 802)){
+			$('#cloudy1').attr("src", "images/icons/icon-3.svg");
 		}
-		if(currentWeatherCondition === "light snow"){
-			$('#cloudy').attr("src","images/icons/icon-14.svg");
+		
+		if((currentWeatherCondition > 802) && (currentWeatherCondition < 805)){
+			$('#cloudy1').attr("src", "images/icons/icon-5.svg");
 		}
-		if(currentWeatherCondition === "Snow"){
-			$('#cloudy').attr("src","images/icons/icon-14.svg");
-		}
-		if(currentWeatherCondition === "Mist"){
-			$('#cloudy').attr("src","images/icons/icon-7.svg");
-		}
-		if(currentWeatherCondition === "Rain"){
-			$('#cloudy').attr("src","images/icons/icon-9.svg");
 		}
 		$('#cloudy').show("slow");
 });
