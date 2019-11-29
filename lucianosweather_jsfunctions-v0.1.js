@@ -41,7 +41,7 @@
 		
 		$(".forecast-icon > .forecasttext").html(`<div class = "forecasttext" style = "font-size:medium"> Humidity: ${data.rh}%<br /> Wind Speed: ${Math.round(data.wind_spd)} mph</div>`);
 		
-		var currentWeatherCondition = data[0].weather[0].code;
+		var currentWeatherCondition = data[0].weather.code;
 		
 		if((currentWeatherCondition > 299) && (currentWeatherCondition < 523)){
 			$('#cloudy1').attr("src", "images/icons/icon-9.svg");
