@@ -327,7 +327,11 @@ $(function(){
 $(document).ready(function(){
 
    $('.num').disableSelection();
-    
+   $('.location').disableSelection();
+   $('.highlowtemp').disableSelection();
+   $('.forecasttext').disableSelection();
+   $('.cloudy').disableSelection();
+   $('.degree cloudy1').disableSelection();
 });
 
 
