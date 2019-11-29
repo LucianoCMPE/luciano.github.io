@@ -1262,18 +1262,25 @@ form textarea {
       .forecast-container .forecast.today .forecast-content {
         text-align: left;
         padding-top: 20px;
-        padding-bottom: 50px; }
+        padding-bottom: 50px; 
+        font-weight: 700;
+    }
       .forecast-container .forecast.today .location {
         font-size: 18px;
         font-size: 1.2857142857em;
         font-weight: 400; }
+      .side-by-side {
+          display: flex;
+      }  
+
       .forecast-container .forecast.today .degree .num, .forecast-container .forecast.today .degree .forecast-icon {
         display: inline-block;
         vertical-align: middle; }
 
       .degree .highlowtemp {
           opacity: 0;
-          width: 180px; //120
+          margin-top: -10px;
+          width: 140px; //120
           background-color: #323544;
           color: #fff;
           text-align: center;
@@ -1294,6 +1301,10 @@ form textarea {
         opacity: 0.5;
 }
 
+        .forecast-icon{
+            margin-top: 22px;
+        }
+
       .forecast-icon .forecasttext {
           opacity: 0;
           width: 180px; //120
@@ -1312,8 +1323,6 @@ form textarea {
       .forecast-icon:hover .forecasttext {
           opacity: 1;
 }
-
-
       .forecast-icon:hover > #cloudy {
         transition: 0.5s ease;
         opacity: 0.5;
@@ -1341,8 +1350,9 @@ form textarea {
     .forecast-container .forecast .forecast-icon {
       height: 50px; }
     .forecast-container .forecast .forecast-content {
-      padding: 50px 20px 10px;
-      text-align: center;}
+        padding: 50px 20px 10px;
+        text-align: center;
+    }
       .forecast-container .forecast .forecast-content .forecast-icon {
         margin-bottom: 20px; }
       .forecast-container .forecast .forecast-content .degree {
@@ -1750,12 +1760,13 @@ form textarea {
    div#day6 { 
  display: none; 
 }
-  div#temp1 {
+  div#displayDegree {
   display:none;
 }
   
 .cloudy {
     display:none;
+    margin-left: 50px;
 }
   
   .cloudy1 {
