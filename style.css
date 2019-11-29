@@ -1296,7 +1296,7 @@ form textarea {
           opacity: 1;
 }
 
-      .degree:hover > #num {
+      .degree:hover > .num {
         transition: 0.5s ease;
         opacity: 0.5;
 }
