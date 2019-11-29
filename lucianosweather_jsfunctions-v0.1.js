@@ -34,14 +34,14 @@
 	
 		
 	$.getJSON('http://api.weatherbit.io/v2.0/current?city=Towson,MD&days=16&units=I&key=b079da81f71d4ebba36ee3dc544a3931', function(data) {
-		$("#temp1").fadeIn(1000).css("display","inline-block").html(Math.round(data.temp) + '<sup>o</sup>');
+		$("#temp1").fadeIn(1000).css("display","inline-block").html(Math.round(data[0].temp) + '<sup>o</sup>');
 		
 		//$(".forecast.today > .highlowtemp").html(`<div class = "highlowtemp" style = "font-size:medium"> High: ${data.rh}%<br /> Wind Speed: ${Math.round(data.wind_spd)} mph</div>`);
 		
 		
 		$(".forecast-icon > .forecasttext").html(`<div class = "forecasttext" style = "font-size:medium"> Humidity: ${data.rh}%<br /> Wind Speed: ${Math.round(data.wind_spd)} mph</div>`);
 		
-		var currentWeatherCondition = data.weather[1].main;
+		var currentWeatherCondition = data[0].weather[0].code;
 		
 		if((currentWeatherCondition > 299) && (currentWeatherCondition < 523)){
 			$('#cloudy1').attr("src", "images/icons/icon-9.svg");
