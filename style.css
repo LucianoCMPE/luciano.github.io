@@ -1271,7 +1271,7 @@ form textarea {
         display: inline-block;
         vertical-align: middle; }
 
-      .forecast.today .highlowtemp {
+      .forecast.today .degree .highlowtemp {
           opacity: 0;
           width: 180px; //120
           background-color: #323544;
@@ -1285,11 +1285,11 @@ form textarea {
           transition: 0.3s ease;
 }
 
-      .forecast.today:hover .forecasttext {
+      .forecast.today .degree:hover .forecasttext {
           opacity: 1;
 }
 
-      .forecast.today:hover > #num {
+      .forecast.today .degree:hover > #num {
         transition: 0.5s ease;
         opacity: 0.5;
 }
