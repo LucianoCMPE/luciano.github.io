@@ -59,7 +59,7 @@
 		if((currentWeatherCondition > 802) && (currentWeatherCondition < 805)){
 			$('#cloudy').attr("src", "images/icons/icon-5.svg");
 		}
-// 		$('#cloudy').show("slow");
+		$('#cloudy').show("slow");
 });
 	$.getJSON('http://api.weatherbit.io/v2.0/forecast/daily?city=Towson,MD&days=16&units=I&key=b079da81f71d4ebba36ee3dc544a3931', function(data) {		
 		//FIRST DAY FORECAST (GENERATES ICON FOR DAY 1)
@@ -69,19 +69,19 @@
 			$('#cloudy1').attr("src", "images/icons/icon-9.svg");
 		}
 		
-		if((currentDayCondition > 599) && (currentDayCondition < 611)){
+		else if((currentDayCondition > 599) && (currentDayCondition < 611)){
 			$('#cloudy1').attr("src", "images/icons/icon-14.svg");
 		}	
 		
-		if(currentDayCondition == 800){
+		else if(currentDayCondition == 800){
 			$('#cloudy1').attr("src", "images/icons/icon-2.svg");
 		}
 		
-		if((currentDayCondition == 801) || (currentDayCondition == 802)){
+		else if((currentDayCondition == 801) || (currentDayCondition == 802)){
 			$('#cloudy1').attr("src", "images/icons/icon-3.svg");
 		}
 		
-		if((currentDayCondition > 802) && (currentDayCondition < 805)){
+		else((currentDayCondition > 802) && (currentDayCondition < 805)){
 			$('#cloudy1').attr("src", "images/icons/icon-5.svg");
 		}
 		/////////////////////////////////////////////////////////////
@@ -94,19 +94,19 @@
 			$('#cloudy2').attr("src", "images/icons/icon-9.svg");
 		}
 		
-		if((currentDayCondition > 599) && (currentDayCondition < 611)){
+		else if((currentDayCondition > 599) && (currentDayCondition < 611)){
 			$('#cloudy2').attr("src", "images/icons/icon-14.svg");
 		}	
 		
-		if(currentDayCondition == 800){
+		else if(currentDayCondition == 800){
 			$('#cloudy2').attr("src", "images/icons/icon-2.svg");
 		}
 		
-		if((currentDayCondition == 801) || (currentDayCondition == 802)){
+		else if((currentDayCondition == 801) || (currentDayCondition == 802)){
 			$('#cloudy2').attr("src", "images/icons/icon-3.svg");
 		}
 		
-		if((currentDayCondition > 802) && (currentDayCondition < 805)){
+		else ((currentDayCondition > 802) && (currentDayCondition < 805)){
 			$('#cloudy2').attr("src", "images/icons/icon-5.svg");
 		}
 	
@@ -119,19 +119,19 @@
 			$('#cloudy3').attr("src", "images/icons/icon-9.svg");
 		}
 		
-		if((currentDayCondition > 599) && (currentDayCondition < 611)){
+		else if((currentDayCondition > 599) && (currentDayCondition < 611)){
 			$('#cloudy3').attr("src", "images/icons/icon-14.svg");
 		}	
 		
-		if(currentDayCondition == 800){
+		else if (currentDayCondition == 800){
 			$('#cloudy3').attr("src", "images/icons/icon-2.svg");
 		}
 		
-		if((currentDayCondition == 801) || (currentDayCondition == 802)){
+		else if((currentDayCondition == 801) || (currentDayCondition == 802)){
 			$('#cloudy3').attr("src", "images/icons/icon-3.svg");
 		}
 		
-		if((currentDayCondition > 802) && (currentDayCondition < 805)){
+		else ((currentDayCondition > 802) && (currentDayCondition < 805)){
 			$('#cloudy3').attr("src", "images/icons/icon-5.svg");
 		}
 		
@@ -145,19 +145,19 @@
 			$('#cloudy4').attr("src", "images/icons/icon-9.svg");
 		}
 		
-		if((currentDayCondition > 599) && (currentDayCondition < 611)){
+		else if((currentDayCondition > 599) && (currentDayCondition < 611)){
 			$('#cloudy4').attr("src", "images/icons/icon-14.svg");
 		}	
 		
-		if(currentDayCondition == 800){
+		else if(currentDayCondition == 800){
 			$('#cloudy4').attr("src", "images/icons/icon-2.svg");
 		}
 		
-		if((currentDayCondition == 801) || (currentDayCondition == 802)){
+		else if((currentDayCondition == 801) || (currentDayCondition == 802)){
 			$('#cloudy4').attr("src", "images/icons/icon-3.svg");
 		}
 		
-		if((currentDayCondition > 802) && (currentDayCondition < 805)){
+		else ((currentDayCondition > 802) && (currentDayCondition < 805)){
 			$('#cloudy4').attr("src", "images/icons/icon-5.svg");
 		}
 		///////////////////////////////////////////////////////////////////
@@ -170,19 +170,19 @@
 			$('#cloudy5').attr("src", "images/icons/icon-9.svg");
 		}
 		
-		if((currentDayCondition > 599) && (currentDayCondition < 611)){
+		else if((currentDayCondition > 599) && (currentDayCondition < 611)){
 			$('#cloudy5').attr("src", "images/icons/icon-14.svg");
 		}	
 		
-		if(currentDayCondition == 800){
+		else if(currentDayCondition == 800){
 			$('#cloudy5').attr("src", "images/icons/icon-2.svg");
 		}
 		
-		if((currentDayCondition == 801) || (currentDayCondition == 802)){
+		else if((currentDayCondition == 801) || (currentDayCondition == 802)){
 			$('#cloudy5').attr("src", "images/icons/icon-3.svg");
 		}
 		
-		if((currentDayCondition > 802) && (currentDayCondition < 805)){
+		else ((currentDayCondition > 802) && (currentDayCondition < 805)){
 			$('#cloudy5').attr("src", "images/icons/icon-5.svg");
 		}
 		
@@ -196,22 +196,22 @@
 			$('#cloudy6').attr("src", "images/icons/icon-9.svg");
 		}
 		
-		if((currentDayCondition > 599) && (currentDayCondition < 611)){
+		else if((currentDayCondition > 599) && (currentDayCondition < 611)){
 			$('#cloudy6').attr("src", "images/icons/icon-14.svg");
 		}	
 		
-		if(currentDayCondition == 800){
+		else if(currentDayCondition == 800){
 			$('#cloudy6').attr("src", "images/icons/icon-2.svg");
 		}
 		
-		if((currentDayCondition == 801) || (currentDayCondition == 802)){
+		else if((currentDayCondition == 801) || (currentDayCondition == 802)){
 			$('#cloudy6').attr("src", "images/icons/icon-3.svg");
 		}
 		
-		if((currentDayCondition > 802) && (currentDayCondition < 805)){
+		else ((currentDayCondition > 802) && (currentDayCondition < 805)){
 			$('#cloudy6').attr("src", "images/icons/icon-5.svg");
 		}
-		$('#cloudy').show("slow");
+
 		$("#cloudy1").show("slow");
 		$("#cloudy2").show("slow");
 		$("#cloudy3").show("slow");
