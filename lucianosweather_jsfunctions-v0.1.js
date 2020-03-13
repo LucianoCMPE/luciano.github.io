@@ -81,7 +81,7 @@
 			$('#cloudy1').attr("src", "images/icons/icon-3.svg");
 		}
 		
-		else((currentDayCondition > 802) && (currentDayCondition < 805)){
+		else if ((currentDayCondition > 802) && (currentDayCondition < 805)){
 			$('#cloudy1').attr("src", "images/icons/icon-5.svg");
 		}
 		/////////////////////////////////////////////////////////////
@@ -106,7 +106,7 @@
 			$('#cloudy2').attr("src", "images/icons/icon-3.svg");
 		}
 		
-		else ((currentDayCondition > 802) && (currentDayCondition < 805)){
+		else if ((currentDayCondition > 802) && (currentDayCondition < 805)){
 			$('#cloudy2').attr("src", "images/icons/icon-5.svg");
 		}
 	
@@ -131,7 +131,7 @@
 			$('#cloudy3').attr("src", "images/icons/icon-3.svg");
 		}
 		
-		else ((currentDayCondition > 802) && (currentDayCondition < 805)){
+		else if ((currentDayCondition > 802) && (currentDayCondition < 805)){
 			$('#cloudy3').attr("src", "images/icons/icon-5.svg");
 		}
 		
@@ -157,7 +157,7 @@
 			$('#cloudy4').attr("src", "images/icons/icon-3.svg");
 		}
 		
-		else ((currentDayCondition > 802) && (currentDayCondition < 805)){
+		else if ((currentDayCondition > 802) && (currentDayCondition < 805)){
 			$('#cloudy4').attr("src", "images/icons/icon-5.svg");
 		}
 		///////////////////////////////////////////////////////////////////
@@ -182,7 +182,7 @@
 			$('#cloudy5').attr("src", "images/icons/icon-3.svg");
 		}
 		
-		else ((currentDayCondition > 802) && (currentDayCondition < 805)){
+		else if ((currentDayCondition > 802) && (currentDayCondition < 805)){
 			$('#cloudy5').attr("src", "images/icons/icon-5.svg");
 		}
 		
@@ -208,7 +208,7 @@
 			$('#cloudy6').attr("src", "images/icons/icon-3.svg");
 		}
 		
-		else ((currentDayCondition > 802) && (currentDayCondition < 805)){
+		else if ((currentDayCondition > 802) && (currentDayCondition < 805)){
 			$('#cloudy6').attr("src", "images/icons/icon-5.svg");
 		}
 
