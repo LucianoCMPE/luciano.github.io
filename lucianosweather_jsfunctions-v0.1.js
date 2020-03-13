@@ -32,7 +32,36 @@
 	//}
 	
 		
-	$.getJSON('http://api.weatherbit.io/v2.0/current?city=Towson,MD&days=16&units=I&key=b079da81f71d4ebba36ee3dc544a3931', function(data) {
+// 	$.getJSON('http://api.weatherbit.io/v2.0/current?city=Towson,MD&days=16&units=I&key=b079da81f71d4ebba36ee3dc544a3931', function(data) {
+// 		$("#displayDegree").fadeIn(1000).css("display","inline-block").html(`${Math.round(data.data[0].temp)}<sup>o</sup>`);
+		
+// 		$(".degree > .highlowtemp").html(`<div class = "highlowtemp" style = "font-size:medium"> Feels like: ${Math.round(data.data[0].app_temp)}<sup>o</sup></div>`);
+// 		$(".forecast-icon > .forecasttext").html(`<div class = "forecasttext" style = "font-size:medium"> Humidity: ${data.data[0].rh}%<br /> Wind Speed: ${Math.round(data.data[0].wind_spd)} mph</div>`);
+		
+// 		var currentWeatherCondition = data.data[0].weather.code;
+		
+// 		if((currentWeatherCondition > 299) && (currentWeatherCondition < 523)){
+// 			$('#cloudy').attr("src", "images/icons/icon-9.svg");
+// 		}
+		
+// 		if((currentWeatherCondition > 599) && (currentWeatherCondition < 611)){
+// 			$('#cloudy').attr("src", "images/icons/icon-14.svg");
+// 		}	
+		
+// 		if(currentWeatherCondition == 800){
+// 			$('#cloudy').attr("src", "images/icons/icon-2.svg");
+// 		}
+		
+// 		if((currentWeatherCondition == 801) || (currentWeatherCondition == 802)){
+// 			$('#cloudy').attr("src", "images/icons/icon-3.svg");
+// 		}
+		
+// 		if((currentWeatherCondition > 802) && (currentWeatherCondition < 805)){
+// 			$('#cloudy').attr("src", "images/icons/icon-5.svg");
+// 		}
+// 		$('#cloudy').show("slow");
+// });
+	$.getJSON('http://api.weatherbit.io/v2.0/forecast/daily?city=Towson,MD&days=16&units=I&key=b079da81f71d4ebba36ee3dc544a3931', function(data) {
 		$("#displayDegree").fadeIn(1000).css("display","inline-block").html(`${Math.round(data.data[0].temp)}<sup>o</sup>`);
 		
 		$(".degree > .highlowtemp").html(`<div class = "highlowtemp" style = "font-size:medium"> Feels like: ${Math.round(data.data[0].app_temp)}<sup>o</sup></div>`);
@@ -60,8 +89,9 @@
 			$('#cloudy').attr("src", "images/icons/icon-5.svg");
 		}
 		$('#cloudy').show("slow");
-});
-	$.getJSON('http://api.weatherbit.io/v2.0/forecast/daily?city=Towson,MD&days=16&units=I&key=b079da81f71d4ebba36ee3dc544a3931', function(data) {
+		
+		
+		
 		//FIRST DAY FORECAST (GENERATES ICON FOR DAY 1)
 		var currentDayCondition = data.data[1].weather.code
 		
