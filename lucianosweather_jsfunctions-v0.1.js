@@ -32,7 +32,7 @@
 	//}
 	
 		
-	$.getJSON('http://api.weatherbit.io/v2.0/current?city=Towson,MD&days=16&units=I&key=39d5f87afded4aa2933782423e0b493b', function(data) {
+	$.getJSON('https://api.weatherbit.io/v2.0/current?city=Towson,MD&days=16&units=I&key=39d5f87afded4aa2933782423e0b493b', function(data) {
 		$("#displayDegree").fadeIn(1000).css("display","inline-block").html(`${Math.round(data.data[0].temp)}<sup>o</sup>`);
 		
 		$(".degree > .highlowtemp").html(`<div class = "highlowtemp" style = "font-size:medium"> Feels like: ${Math.round(data.data[0].app_temp)}<sup>o</sup></div>`);
