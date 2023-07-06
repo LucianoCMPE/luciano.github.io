@@ -61,7 +61,7 @@
 		}
 		$('#cloudy').show("slow");
 });
-	$.getJSON('http://api.weatherbit.io/v2.0/forecast/daily?city=Towson,MD&days=16&units=I&key=39d5f87afded4aa2933782423e0b493b', function(data) {		
+	$.getJSON('https://api.weatherbit.io/v2.0/forecast/daily?city=Towson,MD&days=16&units=I&key=39d5f87afded4aa2933782423e0b493b', function(data) {		
 		//FIRST DAY FORECAST (GENERATES ICON FOR DAY 1)
 		var currentDayCondition = data.data[1].weather.code
 		
