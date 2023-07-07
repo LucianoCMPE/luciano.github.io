@@ -20,48 +20,55 @@
   	var n = weekday[d.getDay()];
 	$("#day1").fadeIn(1000).text(n);
 	});
-	// Change this to your API key between the single quotes ('):
-	//var api_key = '924dbd1a7a384a1d6dfb73f3a1319631';
-	//var request = new XMLHttpRequest();
-	//request.open('GET', 'http://api.openweathermap.org/data/2.5/weather?q=Baltimore,us&units=imperial&appid=' + api_key);
-	//request.responseType = 'json';
-	//request.send();
-	// var weather_data = loadjson('http://api.openweathermap.org/data/2.5/weather?q=Baltimore,ca&units=imperial&appid=' + api_key);
-	//request.onload = function() {
-  	//	alert(request.response['main']); // get the string from the response
-	//}
-	
-		
-	$.getJSON('https://api.weatherbit.io/v2.0/current?city=Towson,MD&days=16&units=I&key=39d5f87afded4aa2933782423e0b493b', function(data) {
+
+
+	// var nameTest = document.getElementById("helper").getAttribute("data-name");
+	// nameTest;
+	function set_Daily(data){
 		$("#displayDegree").fadeIn(1000).css("display","inline-block").html(`${Math.round(data.data[0].temp)}<sup>o</sup>`);
-		
+
 		$(".degree > .highlowtemp").html(`<div class = "highlowtemp" style = "font-size:medium"> Feels like: ${Math.round(data.data[0].app_temp)}<sup>o</sup></div>`);
 		$(".forecast-icon > .forecasttext").html(`<div class = "forecasttext" style = "font-size:medium"> Humidity: ${data.data[0].rh}%<br /> Wind Speed: ${Math.round(data.data[0].wind_spd)} mph</div>`);
-		
+
 		var currentWeatherCondition = data.data[0].weather.code;
-		
+
 		if((currentWeatherCondition > 299) && (currentWeatherCondition < 523)){
 			$('#cloudy').attr("src", "images/icons/icon-9.svg");
 		}
-		
+
 		if((currentWeatherCondition > 599) && (currentWeatherCondition < 611)){
 			$('#cloudy').attr("src", "images/icons/icon-14.svg");
 		}	
-		
+
 		if(currentWeatherCondition == 800){
 			$('#cloudy').attr("src", "images/icons/icon-2.svg");
 		}
-		
+
 		if((currentWeatherCondition == 801) || (currentWeatherCondition == 802)){
 			$('#cloudy').attr("src", "images/icons/icon-3.svg");
 		}
-		
+
 		if((currentWeatherCondition > 802) && (currentWeatherCondition < 805)){
 			$('#cloudy').attr("src", "images/icons/icon-5.svg");
 		}
-		$('#cloudy').show("slow");
-});
-	$.getJSON('https://api.weatherbit.io/v2.0/forecast/daily?city=Towson,MD&days=16&units=I&key=39d5f87afded4aa2933782423e0b493b', function(data) {		
+		$('#cloudy').fadeIn(1000);
+
+	}
+
+	function get_Daily(){
+		$.getJSON('https://api.weatherbit.io/v2.0/current?city=Towson,MD&days=16&units=I&key=76a6ac25a4d64a89ad678c4746842362', function(data) {
+			set_Daily(data);
+		});
+	}
+		
+
+	
+	get_Daily();
+
+// function myCallback(data){
+//     // Do some processing!
+// }
+	$.getJSON('https://api.weatherbit.io/v2.0/forecast/daily?city=Towson,MD&days=16&units=I&key=76a6ac25a4d64a89ad678c4746842362', function(data) {		
 		//FIRST DAY FORECAST (GENERATES ICON FOR DAY 1)
 		var currentDayCondition = data.data[1].weather.code
 		
