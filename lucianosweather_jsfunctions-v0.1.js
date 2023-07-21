@@ -21,9 +21,6 @@
 	$("#day1").fadeIn(1000).text(n);
 	});
 
-
-	// var nameTest = document.getElementById("helper").getAttribute("data-name");
-	// nameTest;
 	function set_Daily(data){
 		$("#displayDegree").fadeIn(1000).css("display","inline-block").html(`${Math.round(data.data[0].temp)}<sup>o</sup>`);
 
