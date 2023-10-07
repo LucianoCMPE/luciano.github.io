@@ -356,7 +356,25 @@ $(document).ready(function(){
 });
 
 
-
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+	document.getElementById("myDropdown").classList.toggle("show");
+  }
+  
+  // Close the dropdown if the user clicks outside of it
+  window.onmouseleave = function(event) {
+	if (!event.target.matches('.dropbtn')) {
+	  var dropdowns = document.getElementsByClassName("dropdown-content");
+	  var i;
+	  for (i = 0; i < dropdowns.length; i++) {
+		var openDropdown = dropdowns[i];
+		if (openDropdown.classList.contains('show')) {
+		  openDropdown.classList.remove('show');
+		}
+	  }
+	}
+  }
 // This jQuery Plugin will disable text selection for Android and iOS devices.
 // Stackoverflow Answer: http://stackoverflow.com/a/2723677/1195891
 $.fn.extend({
