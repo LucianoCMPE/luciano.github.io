@@ -95,7 +95,11 @@
 		if((currentDayCondition > 299) && (currentDayCondition < 523)){
 			$('#cloudy1').attr("src", "images/icons/icon-9.svg");
 		}
-		
+
+		else if(currentDayCondition == 201){
+			$('#cloudy1').attr("src", "images/icons/icon-11.svg");
+		}
+
 		else if((currentDayCondition > 599) && (currentDayCondition < 611)){
 			$('#cloudy1').attr("src", "images/icons/icon-14.svg");
 		}	
@@ -119,6 +123,10 @@
 		
 		if((currentDayCondition > 299) && (currentDayCondition < 523)){
 			$('#cloudy2').attr("src", "images/icons/icon-9.svg");
+		}
+
+		else if(currentDayCondition == 201){
+			$('#cloudy2').attr("src", "images/icons/icon-11.svg");
 		}
 		
 		else if((currentDayCondition > 599) && (currentDayCondition < 611)){
@@ -144,6 +152,10 @@
 		
 		if((currentDayCondition > 299) && (currentDayCondition < 523)){
 			$('#cloudy3').attr("src", "images/icons/icon-9.svg");
+		}
+
+		else if(currentDayCondition == 201){
+			$('#cloudy3').attr("src", "images/icons/icon-11.svg");
 		}
 		
 		else if((currentDayCondition > 599) && (currentDayCondition < 611)){
@@ -171,6 +183,10 @@
 		if((currentDayCondition > 299) && (currentDayCondition < 523)){
 			$('#cloudy4').attr("src", "images/icons/icon-9.svg");
 		}
+
+		else if(currentDayCondition == 201){
+			$('#cloudy4').attr("src", "images/icons/icon-11.svg");
+		}
 		
 		else if((currentDayCondition > 599) && (currentDayCondition < 611)){
 			$('#cloudy4').attr("src", "images/icons/icon-14.svg");
@@ -195,6 +211,10 @@
 		
 		if((currentDayCondition > 299) && (currentDayCondition < 523)){
 			$('#cloudy5').attr("src", "images/icons/icon-9.svg");
+		}
+
+		else if(currentDayCondition == 201){
+			$('#cloudy5').attr("src", "images/icons/icon-11.svg");
 		}
 		
 		else if((currentDayCondition > 599) && (currentDayCondition < 611)){
@@ -221,6 +241,10 @@
 		
 		if((currentDayCondition > 299) && (currentDayCondition < 523)){
 			$('#cloudy6').attr("src", "images/icons/icon-9.svg");
+		}
+
+		else if(currentDayCondition == 201){
+			$('#cloudy6').attr("src", "images/icons/icon-11.svg");
 		}
 		
 		else if((currentDayCondition > 599) && (currentDayCondition < 611)){
