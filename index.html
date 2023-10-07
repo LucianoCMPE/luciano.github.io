@@ -65,11 +65,11 @@
  			<div class="forecast-table">	
  				<div class="container">
 					<div class="dropdown">
-						<button onmouseover="myFunction()" class="dropbtn">City</button>
+						<button onclick ="myFunction()" class="dropbtn">Click here to choose location</button>
 						<div id="myDropdown" class="dropdown-content">
-						  <a href="#home">Towson, MD</a>
-						  <a href="#about">Austin, TX</a>
-						  <a href="#contact">Seattle, WA</a>
+						  <button onclick = "clickHandler('Towson, MD')" type ="button" class = "button2">Towson, MD</button>	
+						  <button onclick = "clickHandler('Austin, TX')" type ="button" class = "button2">Austin, TX</button>
+						  <button onclick = "clickHandler('Seattle, WA')" type ="button" class = "button2">Seattle, WA</button>
 						</div>	
 					</div>
  					<div class="forecast-container" style="display:none;" id="table">
