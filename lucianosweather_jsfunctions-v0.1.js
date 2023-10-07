@@ -63,6 +63,7 @@
 	}
 
 	function clickHandler(data){
+		document.getElementById("newLocation").textContent=data;
 		var a = 'https://api.weatherbit.io/v2.0/current?city=&days=16&units=I&key=76a6ac25a4d64a89ad678c4746842362';
 		var b = data;
 		var position = 44;

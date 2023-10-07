@@ -1763,7 +1763,10 @@ form textarea {
   div#displayDegree {
   display:none;
 }
-  
+
+div#newLocation {
+  content: "Baltimore"
+}  
 .cloudy {
     display:none;
     /*margin-left: 50px; */
