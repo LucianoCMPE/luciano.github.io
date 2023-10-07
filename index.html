@@ -52,7 +52,6 @@
  
  				</div>
  			</div> <!-- .site-header -->
- 
  			<div class="hero" style="background-image: url(Test/1477405396_Baltimore.jpg)">
  				<!--<div class="container">
  					<form action="#" class="find-location">
@@ -61,10 +60,18 @@
  					</form>
  					
 			</div>-->
- 			</div>
- 										 
- 			<div class="forecast-table">
+ 			</div>	
+				 
+ 			<div class="forecast-table">	
  				<div class="container">
+					<div class="dropdown">
+						<button onmouseover="myFunction()" class="dropbtn">City</button>
+						<div id="myDropdown" class="dropdown-content">
+						  <a href="#home">Towson, MD</a>
+						  <a href="#about">Austin, TX</a>
+						  <a href="#contact">Seattle, WA</a>
+						</div>	
+					</div>
  					<div class="forecast-container" style="display:none;" id="table">
  						<div class="today forecast">
  							<div class="forecast-header">
@@ -81,7 +88,7 @@
  								document.write(day)
  								</script>
  								</div>
- 										
+							
  							</div> <!-- .forecast-header -->
  							<div class="forecast-content">
  								<div class="location">Baltimore</div>
