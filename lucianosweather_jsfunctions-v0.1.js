@@ -56,16 +56,37 @@
 		$.getJSON('https://api.weatherbit.io/v2.0/current?city=Towson,MD&days=16&units=I&key=76a6ac25a4d64a89ad678c4746842362', function(data) {
 			set_Daily(data);
 		});
-	}
+		$.getJSON('https://api.weatherbit.io/v2.0/forecast/daily?city=Towson,MD&days=16&units=I&key=76a6ac25a4d64a89ad678c4746842362', function(data) {
+			set_Weekly(data);
+		});
 		
+	}
 
+	function clickHandler(data){
+		var a = 'https://api.weatherbit.io/v2.0/current?city=&days=16&units=I&key=76a6ac25a4d64a89ad678c4746842362';
+		var b = data;
+		var position = 44;
+		var output = [a.slice(0, position), b, a.slice(position)].join('');
+		a = 'https://api.weatherbit.io/v2.0/forecast/daily?city=&days=16&units=I&key=76a6ac25a4d64a89ad678c4746842362';
+		b = data;
+		position = 51;
+		var output2 = [a.slice(0, position), b, a.slice(position)].join('');
+		$.getJSON(output, function(data) {
+			set_Daily(data);
+		});
+		$.getJSON(output2, function(data) {
+			console.log(output2);
+			set_Weekly(data);
+		});
+	}	
 	
 	get_Daily();
 
 // function myCallback(data){
 //     // Do some processing!
 // }
-	$.getJSON('https://api.weatherbit.io/v2.0/forecast/daily?city=Towson,MD&days=16&units=I&key=76a6ac25a4d64a89ad678c4746842362', function(data) {		
+	function set_Weekly(data){
+	// $.getJSON('https://api.weatherbit.io/v2.0/forecast/daily?city=Towson,MD&days=16&units=I&key=76a6ac25a4d64a89ad678c4746842362', function(data) {		
 		//FIRST DAY FORECAST (GENERATES ICON FOR DAY 1)
 		var currentDayCondition = data.data[1].weather.code
 		
@@ -238,9 +259,7 @@
 		$("#tempz9").fadeIn(1000).html(Math.round(data.data[5].min_temp) + '<sup>o</sup>');
 		$("#tempz10").fadeIn(1000).html(Math.round(data.data[6].max_temp) + '<sup>o</sup>');
 		$("#tempz11").fadeIn(1000).html(Math.round(data.data[6].min_temp) + '<sup>o</sup>');
-		
-		
-});
+	}	
 	
 	//$.getJSON('http://api.weatherbit.io/v2.0/forecast/daily?city=Baltimore,MD&days=5&units=I&key=b079da81f71d4ebba36ee3dc544a3931', function(data) {
 	
@@ -269,6 +288,7 @@
 	//alert(weather_data);
 	//alert(weather_data.main.temp);
 	//$("#temp1").text(weather_data.main.temp);
+
 
 
 $(function(){
@@ -363,7 +383,7 @@ function myFunction() {
   }
   
   // Close the dropdown if the user clicks outside of it
-  window.onmouseleave = function(event) {
+  window.onclick = function(event) {
 	if (!event.target.matches('.dropbtn')) {
 	  var dropdowns = document.getElementsByClassName("dropdown-content");
 	  var i;
