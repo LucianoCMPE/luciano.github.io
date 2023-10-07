@@ -72,6 +72,8 @@
 		b = data;
 		position = 51;
 		var output2 = [a.slice(0, position), b, a.slice(position)].join('');
+		output1.replace(/%20/g,'');
+		output2.replace(/%20/g,'');
 		$.getJSON(output, function(data) {
 			set_Daily(data);
 		});
