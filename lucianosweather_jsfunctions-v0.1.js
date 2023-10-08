@@ -2,7 +2,9 @@
   			window.scrollTo(0, 0);
 		});	
 	$("#table5").hide().fadeIn(1000);
-	$("#table4").hide().fadeIn();
+	$("#table12").hide().fadeIn(1000);
+	$("#table11").hide().fadeIn(1000);
+	$("#table4").hide().fadeIn(1000);
 	$("#table3").hide().slideDown(1000);
 	$("#table2").hide().slideDown(1000);
 	$("#table1").hide().slideDown(1000);
