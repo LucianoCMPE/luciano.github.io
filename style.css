@@ -1906,6 +1906,7 @@ div.keepontop {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: rgb(45,48,61);
+  /* background: rgb(45,48,61); */
+  background: rgb(32, 34, 44);
   border-radius: 0px;
 }
