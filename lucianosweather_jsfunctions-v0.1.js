@@ -75,6 +75,41 @@
 		b = data;
 		position = 51;
 		var output2 = [a.slice(0, position), b, a.slice(position)].join('');
+		let element = document.getElementById("imageOfCity");
+		element.classList.toggle('fade');
+		if (data.includes("NewYork")){
+			element.style.backgroundImage = "url('Test/nyc.jpg')";
+		}
+		else if (data.includes("Baltimore") ){
+			element.style.backgroundImage = "url('Test/1477405396_Baltimore.jpg')";
+		}
+		else if (data.includes("Atlanta")) {
+			element.style.backgroundImage = "url('Test/georgia.jpg')";
+		}
+		else if (data.includes("Austin")) {
+			element.style.backgroundImage = "url('Test/austin.jpg')";
+		}
+		else if (data.includes("Boston")) {
+			element.style.backgroundImage = "url('Test/boston.jpg')";
+		}
+		else if (data.includes("Chicago")) {
+			element.style.backgroundImage = "url('Test/chicago.jpg')";
+		}
+		else if (data.includes("LosAngeles")) {
+			element.style.backgroundImage = "url('Test/LA.jpg')";
+		}
+		else if (data.includes("Seattle")) {
+			element.style.backgroundImage = "url('Test/seattle.jpg')";
+		}
+		else if (data.includes("Toronto")) {
+			element.style.backgroundImage = "url('Test/toronto.jpg')";
+		}
+		else if (data.includes("Towson")){
+			element.style.backgroundImage = "url('Test/towson.jpg')";
+		}
+		else if (data.includes("Washington")){
+			element.style.backgroundImage = "url('Test/DC.jpg')";
+		}
 		$.getJSON(output, function(data) {
 			console.log(output);
 			set_Daily(data);
@@ -86,7 +121,6 @@
 	}	
 	
 	get_Daily();
-
 // function myCallback(data){
 //     // Do some processing!
 // }
@@ -439,3 +473,28 @@ $.fn.extend({
     }
 });
 
+function unfade(element) {
+    var op = 0.1;  // initial opacity
+    element.style.display = 'block';
+    var timer = setInterval(function () {
+        if (op >= 1){
+            clearInterval(timer);
+        }
+        element.style.opacity = op;
+        element.style.filter = 'alpha(opacity=' + op * 100 + ")";
+        op += op * 0.1;
+    }, 10);
+}
+
+function fade(element) {
+    var op = 1;  // initial opacity
+    var timer = setInterval(function () {
+        if (op <= 0.1){
+            clearInterval(timer);
+            element.style.display = 'none';
+        }
+        element.style.opacity = op;
+        element.style.filter = 'alpha(opacity=' + op * 100 + ")";
+        op -= op * 0.1;
+    }, 50);
+}
