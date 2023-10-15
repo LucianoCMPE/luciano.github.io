@@ -101,6 +101,9 @@
 		else if (data.includes("Seattle")) {
 			element.style.backgroundImage = "url('Test/seattle.jpg')";
 		}
+		else if (data.includes("Temecula")) {
+			element.style.backgroundImage = "url('Test/temecula.jpg')";
+		}
 		else if (data.includes("Toronto")) {
 			element.style.backgroundImage = "url('Test/toronto.jpg')";
 		}
