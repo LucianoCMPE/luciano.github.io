@@ -24,6 +24,31 @@
 	$("#day1").fadeIn(1000).text(n);
 	});
 
+	var makeItRain = function() {
+		//clear out everything
+		$('.rain').empty();
+	  
+		var increment = 0;
+		var drops = "";
+		var backDrops = "";
+	  
+		while (increment < 100) {
+		  //couple random numbers to use for various randomizations
+		  //random number between 98 and 1
+		  var randoHundo = (Math.floor(Math.random() * (98 - 1 + 1) + 1));
+		  //random number between 5 and 2
+		  var randoFiver = (Math.floor(Math.random() * (5 - 2 + 1) + 2));
+		  //increment
+		  increment += randoFiver;
+		  //add in a new raindrop with various randomizations to certain CSS properties
+		  drops += '<div class="drop" style="left: ' + increment + '%; bottom: ' + (randoFiver + randoFiver - 1 + 100) + '%; animation-delay: 0.' + randoHundo + 's; animation-duration: 0.5' + randoHundo + 's;"><div class="stem" style="animation-delay: 0.' + randoHundo + 's; animation-duration: 0.5' + randoHundo + 's;"></div><div class="splat" style="animation-delay: 0.' + randoHundo + 's; animation-duration: 0.5' + randoHundo + 's;"></div></div>';
+		  backDrops += '<div class="drop" style="right: ' + increment + '%; bottom: ' + (randoFiver + randoFiver - 1 + 100) + '%; animation-delay: 0.' + randoHundo + 's; animation-duration: 0.5' + randoHundo + 's;"><div class="stem" style="animation-delay: 0.' + randoHundo + 's; animation-duration: 0.5' + randoHundo + 's;"></div><div class="splat" style="animation-delay: 0.' + randoHundo + 's; animation-duration: 0.5' + randoHundo + 's;"></div></div>';
+		}
+	  
+		$('.rain.front-row').append(drops);
+		$('.rain.back-row').append(backDrops);
+	  }
+	  
 	function set_Daily(data){
 		$("#displayDegree").fadeIn(1000).css("display","inline-block").html(`${Math.round(data.data[0].temp)}<sup>o</sup>`);
 
@@ -31,9 +56,15 @@
 		$(".forecast-icon > .forecasttext").html(`<div class = "forecasttext" style = "font-size:medium"> Humidity: ${data.data[0].rh}%<br /> Wind Speed: ${Math.round(data.data[0].wind_spd)} mph</div>`);
 
 		var currentWeatherCondition = data.data[0].weather.code;
-
+		$('.rain').empty();
 		if((currentWeatherCondition > 299) && (currentWeatherCondition < 523)){
 			$('#cloudy').attr("src", "images/icons/icon-9.svg");
+			makeItRain();
+		}
+
+		if(currentWeatherCondition == 201){
+			$('#cloudy').attr("src", "images/icons/icon-11.svg");
+			makeItRain();
 		}
 
 		if((currentWeatherCondition > 599) && (currentWeatherCondition < 611)){
@@ -501,3 +532,28 @@ function fade(element) {
         op -= op * 0.1;
     }, 50);
 }
+
+var makeItRain = function() {
+	//clear out everything
+	$('.rain').empty();
+  
+	var increment = 0;
+	var drops = "";
+	var backDrops = "";
+  
+	while (increment < 100) {
+	  //couple random numbers to use for various randomizations
+	  //random number between 98 and 1
+	  var randoHundo = (Math.floor(Math.random() * (98 - 1 + 1) + 1));
+	  //random number between 5 and 2
+	  var randoFiver = (Math.floor(Math.random() * (5 - 2 + 1) + 2));
+	  //increment
+	  increment += randoFiver;
+	  //add in a new raindrop with various randomizations to certain CSS properties
+	  drops += '<div class="drop" style="left: ' + increment + '%; bottom: ' + (randoFiver + randoFiver - 1 + 100) + '%; animation-delay: 0.' + randoHundo + 's; animation-duration: 0.5' + randoHundo + 's;"><div class="stem" style="animation-delay: 0.' + randoHundo + 's; animation-duration: 0.5' + randoHundo + 's;"></div><div class="splat" style="animation-delay: 0.' + randoHundo + 's; animation-duration: 0.5' + randoHundo + 's;"></div></div>';
+	  backDrops += '<div class="drop" style="right: ' + increment + '%; bottom: ' + (randoFiver + randoFiver - 1 + 100) + '%; animation-delay: 0.' + randoHundo + 's; animation-duration: 0.5' + randoHundo + 's;"><div class="stem" style="animation-delay: 0.' + randoHundo + 's; animation-duration: 0.5' + randoHundo + 's;"></div><div class="splat" style="animation-delay: 0.' + randoHundo + 's; animation-duration: 0.5' + randoHundo + 's;"></div></div>';
+	}
+  
+	$('.rain.front-row').append(drops);
+	$('.rain.back-row').append(backDrops);
+  }	
