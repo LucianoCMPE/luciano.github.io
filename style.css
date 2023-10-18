@@ -1159,6 +1159,7 @@ form textarea {
     *zoom: 1; }
     .main-navigation .menu:after {
       content: " ";
+      pointer-events: auto; 
       clear: both;
       display: block;
       overflow: hidden;
@@ -1900,6 +1901,7 @@ div.keepontop {
 
   .rain {
     position: absolute;
+    pointer-events: none;
     left: 0;
     width: 100%;
     height: 100%;
@@ -1913,8 +1915,9 @@ div.keepontop {
     opacity: 0.5;
   }
   
-  body.back-row-toggle .rain.back-row {
+  body.back-row-toggle .rain.back-row{
     display: block;
+    pointer-events: none;
   }
   
   .drop {
