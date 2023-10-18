@@ -12,6 +12,8 @@
 	$("#date").fadeIn(1000).css("display","inline-block");
 	$(function(){
 	var d = new Date();
+	var dateObj = new Date();
+	var day = dateObj.getDate();
 	var weekday = new Array(7);
 	weekday[6] = "Sunday";
 	weekday[0] = "Monday";
@@ -21,7 +23,7 @@
 	weekday[4] = "Friday";
   	weekday[5] = "Saturday";
   	var n = weekday[d.getDay()];
-	$("#day1").fadeIn(1000).text(n);
+	$("#day1").fadeIn(1000).text(n + ' ' + (day+1));
 	});
 
 	var makeItRain = function() {
@@ -392,6 +394,8 @@ $(function(){
 
   var q = new Date();
   var weekday = new Array(7);
+  var dateObj = new Date();
+  var day = dateObj.getDate();
 	weekday[5] = "Sunday";
 	weekday[6] = "Monday";
 	weekday[0] = "Tuesday";
@@ -400,13 +404,15 @@ $(function(){
 	weekday[3] = "Friday";
   	weekday[4] = "Saturday";
   	var c = weekday[q.getDay()];
-	$("#day2").fadeIn(1000).text(c);
+	$("#day2").fadeIn(1000).text(c + ' ' + (day+2));
 });
 
 $(function(){
 
   var j = new Date();
   var weekday = new Array(7);
+  var dateObj = new Date();
+  var day = dateObj.getDate();
 	weekday[4] = "Sunday";
 	weekday[5] = "Monday";
 	weekday[6] = "Tuesday";
@@ -415,12 +421,14 @@ $(function(){
 	weekday[2] = "Friday";
 	weekday[3] = "Saturday";
   var z = weekday[j.getDay()];
-	$("#day3").fadeIn(1000).text(z);
+	$("#day3").fadeIn(1000).text(z + ' ' + (day+3));
 });
 
 $(function(){
   var x = new Date();
   var weekday = new Array(7);
+  var dateObj = new Date();
+  var day = dateObj.getDate();
 	weekday[3] = "Sunday";
 	weekday[4] = "Monday";
 	weekday[5] = "Tuesday";
@@ -429,12 +437,14 @@ $(function(){
 	weekday[1] = "Friday";
 	weekday[2] = "Saturday";
   var w = weekday[x.getDay()];
-	$("#day4").fadeIn(1000).text(w);
+	$("#day4").fadeIn(1000).text(w + ' ' + (day+4));
 });
 
 $(function(){
   var f = new Date();
   var weekday = new Array(7);
+  var dateObj = new Date();
+  var day = dateObj.getDate();
 	weekday[2] = "Sunday";
 	weekday[3] = "Monday";
 	weekday[4] = "Tuesday";
@@ -443,12 +453,14 @@ $(function(){
 	weekday[0] = "Friday";
 	weekday[1] = "Saturday";
   var i = weekday[f.getDay()];
-	$("#day5").fadeIn(1000).text(i);
+	$("#day5").fadeIn(1000).text(i + ' ' + (day+5));
 });
 
 $(function(){
   var a = new Date();
   var weekday = new Array(7);
+  var dateObj = new Date();
+  var day = dateObj.getDate();
 	weekday[1] = "Sunday";
 	weekday[2] = "Monday";
 	weekday[3] = "Tuesday";
@@ -457,7 +469,7 @@ $(function(){
 	weekday[6] = "Friday";
 	weekday[0] = "Saturday";
   var s = weekday[a.getDay()];
-	$("#day6").fadeIn(1000).text(s);
+	$("#day6").fadeIn(1000).text(s + ' ' + (day+6));
 });  
 	
 // Simply choose any element and apply the .disableSelection(); method to disable text selection.
