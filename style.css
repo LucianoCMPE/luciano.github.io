@@ -1905,7 +1905,8 @@ div.keepontop {
     pointer-events: none;
     overflow: hidden;
     left: 0;
-    width: 95%;
+    top: 0%;
+    width: 100%;
     height: 100%;
     z-index: 0;
   }
@@ -1937,10 +1938,10 @@ div.keepontop {
       transform: translateY(0vh);
     }
     75% {
-      transform: translateY(90vh);
+      transform: translateY(43vh);
     }
     100% {
-      transform: translateY(90vh);
+      transform: translateY(43vh);
     }
   }
   
@@ -1975,12 +1976,9 @@ div.keepontop {
     opacity: 1;
     transform: scale(0);
     animation: splat 0.5s linear infinite;
-    display: none;
-  }
-  
-  body.splat-toggle .splat {
     display: block;
   }
+  
   
   @keyframes splat {
     0% {
