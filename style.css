@@ -1902,6 +1902,7 @@ div.keepontop {
   .rain {
     position: absolute;
     pointer-events: none;
+    overflow: hidden;
     left: 0;
     width: 95%;
     height: 100%;
@@ -1910,7 +1911,8 @@ div.keepontop {
   
   .rain.back-row {
     display: none;
-    z-index: -1;
+    overflow: hidden;
+    z-index: 10;
     bottom: 60px;
     opacity: 0.5;
   }
@@ -1998,7 +2000,46 @@ div.keepontop {
     }
   }
   
-
+  .leaf {
+    width: 80px;
+    z-index: 10001;
+    position: absolute;
+  }
+  .leaf:nth-child(1) {
+    bottom: 10%;
+    z-index: 10001;
+    left: -15%;
+    animation: blowing 3s 1s linear 1;
+  }
+  .leaf:nth-child(2) {
+    bottom: 10vh;
+    z-index: 10001;
+    left: -15%;
+    animation: blowing 1.5s linear 2;
+  }
+  .leaf:nth-child(3) {
+    bottom: 0vh;
+    z-index: 10001;
+    left: -15%;
+    animation: blowing 1s 0.5s linear 2;
+  }
+  @keyframes blowing {
+    0% {
+      transform: translate(0,0) rotate(0)
+    }
+    20% {
+      transform: translate(15vw, -10vh) rotate(170deg)
+    }
+    65% {
+      transform: translate(55vw, -12vh) rotate(550deg)
+    }
+    80% {
+      transform: translate(70vw, -17vh) rotate(740deg)
+    }
+    100% {
+      transform: translate(100vw, -25vh) rotate(920deg)
+    }
+  }
 
 
 
