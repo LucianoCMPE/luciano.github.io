@@ -2021,37 +2021,52 @@ div.keepontop {
     bottom: 10%;
     z-index: 10001;
     left: -15%;
-    animation: blowing 3s 0.5s linear 2;
+    animation: blowing 2.8s 0.5s linear 2;
   }
   .leaf:nth-child(2) {
     bottom: 10vh;
     z-index: 10001;
     left: -15%;
     filter: blur(0.5px);
-    animation: blowing 1.5s 0.5s linear 2;
+    animation: blowing 2.8s 0.3s linear 2;
   }
   .leaf:nth-child(3) {
     bottom: 0vh;
     z-index: 10001;
     left: -15%;
     filter: blur(1px);
-    animation: blowing 1s 0.9s linear 2 alternate;
+    animation: blowing 2.8s 0.9s linear 2;
   }
   @keyframes blowing {
     0% {
-      transform: translate(0,0) rotate(0)
+      transform: translate(0,0) rotate(0);
     }
     20% {
-      transform: translate(15vw, -10vh) rotate(170deg)
+      transform: translate(25vw, -10vh) rotate(170deg);
+    }
+    35% {
+      transform: translate(45vw, 0vh) rotate(250deg);
+    }
+    45% {
+      transform: translate(70vw, 0vh) rotate(330deg);
+    }
+    55% {
+      transform: translate(65vw, -10vh) rotate(410deg);
     }
     65% {
-      transform: translate(45vw, -12vh) rotate(550deg)
+      transform: translate(45vw, -7vh) rotate(500deg);
+    }
+    75% {
+      transform: translate(40vw, -5vh) rotate(700deg);
     }
     80% {
-      transform: translate(65vw, -17vh) rotate(740deg)
+      transform: translate(45vw, -5vh) rotate(810deg);
+    }
+    90% {
+      transform: translate(60vw, -5vh) rotate(880deg);
     }
     100% {
-      transform: translate(111vw, -25vh) rotate(920deg)
+      transform: translate(111vw, 0vh) rotate(920deg);
     }
   }
 
