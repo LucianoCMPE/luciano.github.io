@@ -1,5 +1,6 @@
 	$(window.onbeforeunload = function () {
   			window.scrollTo(0, 0);
+			  showSnow(0);
 		});	
 	$("#table5").hide().fadeIn(1000);
 	$("#table12").hide().fadeIn(1000);
@@ -56,7 +57,12 @@
 
 		$(".degree > .highlowtemp").html(`<div class = "highlowtemp" style = "font-size:medium"> Feels like: ${Math.round(data.data[0].app_temp)}<sup>o</sup></div>`);
 		$(".forecast-icon > .forecasttext").html(`<div class = "forecasttext" style = "font-size:medium"> Humidity: ${data.data[0].rh}%<br /> Wind Speed: ${Math.round(data.data[0].wind_spd)} mph</div>`);
-
+		if (Math.round(data.data[0].wind_spd) >= 10){
+			makeItLeaf();
+		}
+		else{
+			makeItNotLeaf();
+		}
 		var currentWeatherCondition = data.data[0].weather.code;
 		$('.rain').empty();
 		if((currentWeatherCondition > 299) && (currentWeatherCondition < 523)){
@@ -71,6 +77,7 @@
 
 		if((currentWeatherCondition > 599) && (currentWeatherCondition < 611)){
 			$('#cloudy').attr("src", "images/icons/icon-14.svg");
+			showSnow(1);
 		}	
 
 		if(currentWeatherCondition == 800){
@@ -83,11 +90,11 @@
 
 		if((currentWeatherCondition > 802) && (currentWeatherCondition < 805)){
 			$('#cloudy').attr("src", "images/icons/icon-5.svg");
+			
 		}
 		$('#cloudy').fadeIn(1000);
 
 	}
-
 	function get_Daily(){
 		$.getJSON('https://api.weatherbit.io/v2.0/current?city=Towson,MD&days=16&units=I&key=76a6ac25a4d64a89ad678c4746842362', function(data) {
 			set_Daily(data);
@@ -345,8 +352,6 @@
 				//alert(JSON.stringify(main));
 		//JSON.stringify(orig) == JSON.stringify(current) var changed = false
 		$("#tempz").fadeIn(1000).css("display","inline-block").html(Math.round(data.data[1].max_temp) + '<sup>o</sup>');
-		//$("#tempz").fadeIn(1000).css("display","inline-block").html(Math.round(data.max_temp.datetime[1]) + '<sup>o</sup>'); // start at the 2nd temp max 0 for each aray//
-		//$("#tempz1").fadeIn(1000).html(Math.round(data.list[3].main.temp_min) + '<sup>o</sup>');
 		$("#tempz1").fadeIn(1000).html(Math.round(data.data[1].min_temp) + '<sup>o</sup>');
 		$("#tempz2").fadeIn(1000).css("display","inline-block").html(Math.round(data.data[2].max_temp) + '<sup>o</sup>');
 		$("#tempz3").fadeIn(1000).html(Math.round(data.data[2].min_temp) + '<sup>o</sup>');
@@ -360,36 +365,6 @@
 		$("#tempz11").fadeIn(1000).html(Math.round(data.data[6].min_temp) + '<sup>o</sup>');
 	}	
 	
-	//$.getJSON('http://api.weatherbit.io/v2.0/forecast/daily?city=Baltimore,MD&days=5&units=I&key=b079da81f71d4ebba36ee3dc544a3931', function(data) {
-	
-// 	$.getJSON('http://api.weatherbit.io/v2.0/forecast/daily?city=Towson,MD&days=16&units=I&key=b079da81f71d4ebba36ee3dc544a3931', function(data) {	
-//    	 //data is the JSON string
-// 		//alert(JSON.stringify(main));
-// 		//JSON.stringify(orig) == JSON.stringify(current) var changed = false
-// 		$("#tempz").fadeIn(1000).css("display","inline-block").html(Math.round(data.data[1].max_temp) + '<sup>o</sup>');
-// 		//$("#tempz").fadeIn(1000).css("display","inline-block").html(Math.round(data.max_temp.datetime[1]) + '<sup>o</sup>'); // start at the 2nd temp max 0 for each aray//
-// 		//$("#tempz1").fadeIn(1000).html(Math.round(data.list[3].main.temp_min) + '<sup>o</sup>');
-// 		$("#tempz1").fadeIn(1000).html(Math.round(data.data[1].min_temp) + '<sup>o</sup>');
-// 		$("#tempz2").fadeIn(1000).css("display","inline-block").html(Math.round(data.data[2].max_temp) + '<sup>o</sup>');
-// 		$("#tempz3").fadeIn(1000).html(Math.round(data.data[2].min_temp) + '<sup>o</sup>');
-// 		$("#tempz4").fadeIn(1000).css("display","inline-block").html(Math.round(data.data[3].max_temp) + '<sup>o</sup>');
-// 		$("#tempz5").fadeIn(1000).html(Math.round(data.data[3].min_temp) + '<sup>o</sup>');
-// 		$("#tempz6").fadeIn(1000).css("display","inline-block").html(Math.round(data.data[4].max_temp) + '<sup>o</sup>');
-// 		$("#tempz7").fadeIn(1000).html(Math.round(data.data[4].min_temp) + '<sup>o</sup>');
-// 		$("#tempz8").fadeIn(1000).html(Math.round(data.data[5].max_temp) + '<sup>o</sup>');
-// 		$("#tempz9").fadeIn(1000).html(Math.round(data.data[5].min_temp) + '<sup>o</sup>');
-// 		$("#tempz10").fadeIn(1000).html(Math.round(data.data[6].max_temp) + '<sup>o</sup>');
-// 		$("#tempz11").fadeIn(1000).html(Math.round(data.data[6].min_temp) + '<sup>o</sup>');
-		
-// });
-	
-		
-	//alert(weather_data);
-	//alert(weather_data.main.temp);
-	//$("#temp1").text(weather_data.main.temp);
-
-
-
 $(function(){
 
   var q = new Date();
@@ -569,3 +544,26 @@ var makeItRain = function() {
 	$('.rain.front-row').append(drops);
 	$('.rain.back-row').append(backDrops);
   }	
+
+  var makeItLeaf = function(){
+	
+	const secondsToResetAnimation = 1000;
+	const element = document.getElementById("leafToggle");
+
+	setTimeout( function(){
+	const clonedElement = element.cloneNode(true);
+	element.parentNode.replaceChild(clonedElement, element);  
+	}, secondsToResetAnimation );
+
+	setTimeout( function(){
+		let clonedElement = document.getElementById("leafToggle");
+		clonedElement.style.display = "block";
+	}, 1001)
+
+  }
+  var makeItNotLeaf = function(){
+	let element = document.getElementById("leafToggle");
+	element.style.display = "none";
+  }
+  
+
