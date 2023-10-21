@@ -1265,7 +1265,7 @@ form textarea {
           display: block;
           overflow: hidden;
           height: 0; }
-        .forecast-container .forecast.today .forecast-header .day {
+        .forecast-container .forecast.today .forecast-header .day{
           float: left; }
         .forecast-container .forecast.today .forecast-header .date {
           float: right; }
@@ -1351,7 +1351,10 @@ form textarea {
           width: 100%; } }
     .forecast-container .forecast .forecast-header {
       background: rgba(0, 0, 0, 0.1);
-      padding: 10px;
+      padding-top:10px;
+      padding-bottom: 10px;
+      padding-left: 8px;
+      padding-right: 10px;
       text-align: center;
       font-weight: 400; 
       height: 40px;
@@ -1750,24 +1753,67 @@ form textarea {
       background-size: cover; }
 
     div#day1 { 
- display: none; 
+ display: none;
+ white-space: nowrap;
+ @media screen and (min-width: 600px){
+  font-size: 1.15vw; 
+   }
+   @media screen and (min-width: 2000px){
+    font-size: 0.55vw; 
+     }
 }
     div#day2 { 
- display: none; 
+ display: none;
+ white-space: nowrap;
+ @media screen and (min-width: 600px){
+  font-size: 1.15vw; 
+   }
+   @media screen and (min-width: 2000px){
+    font-size: 0.55vw; 
+     }
 }
 
     div#day3 { 
  display: none; 
+ white-space: nowrap;
+ @media screen and (min-width: 600px){
+  font-size: 1.15vw; 
+   }
+   @media screen and (min-width: 2000px){
+    font-size: 0.55vw; 
+     }
 }
 
    div#day4 { 
  display: none; 
+ white-space: nowrap;
+ @media screen and (min-width: 600px){
+  font-size: 1.15vw; 
+   }
+   @media screen and (min-width: 2000px){
+    font-size: 0.55vw; 
+     }
 }
    div#day5 { 
  display: none; 
-}
+ white-space: nowrap;
+ @media screen and (min-width: 600px){
+  font-size: 1.15vw; 
+   }
+   @media screen and (min-width: 2000px){
+    font-size: 0.55vw; 
+     }
+
+  }
    div#day6 { 
- display: none; 
+ display: none;
+ white-space: nowrap; 
+ @media screen and (min-width: 600px){
+  font-size: 1.15vw; 
+   }
+   @media screen and (min-width: 2000px){
+    font-size: 0.55vw; 
+     }
 }
   div#displayDegree {
   display:none;
