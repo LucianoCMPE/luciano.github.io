@@ -1754,66 +1754,66 @@ form textarea {
 
     div#day1 { 
  display: none;
- white-space: nowrap;
+ /* white-space: nowrap;
  @media screen and (min-width: 600px){
   font-size: 1.15vw; 
    }
    @media screen and (min-width: 2000px){
     font-size: 0.55vw; 
-     }
+     } */
 }
     div#day2 { 
  display: none;
- white-space: nowrap;
+ /* white-space: nowrap;
  @media screen and (min-width: 600px){
   font-size: 1.15vw; 
    }
    @media screen and (min-width: 2000px){
     font-size: 0.55vw; 
-     }
+     } */
 }
 
     div#day3 { 
  display: none; 
- white-space: nowrap;
+ /* white-space: nowrap;
  @media screen and (min-width: 600px){
   font-size: 1.15vw; 
    }
    @media screen and (min-width: 2000px){
     font-size: 0.55vw; 
-     }
+     } */
 }
 
    div#day4 { 
  display: none; 
- white-space: nowrap;
+ /* white-space: nowrap;
  @media screen and (min-width: 600px){
   font-size: 1.15vw; 
    }
    @media screen and (min-width: 2000px){
     font-size: 0.55vw; 
-     }
+     } */
 }
    div#day5 { 
  display: none; 
- white-space: nowrap;
+ /* white-space: nowrap;
  @media screen and (min-width: 600px){
   font-size: 1.15vw; 
    }
    @media screen and (min-width: 2000px){
     font-size: 0.55vw; 
-     }
+     } */
 
   }
    div#day6 { 
  display: none;
- white-space: nowrap; 
+ /* white-space: nowrap; 
  @media screen and (min-width: 600px){
   font-size: 1.15vw; 
    }
    @media screen and (min-width: 2000px){
     font-size: 0.55vw; 
-     }
+     } */
 }
   div#displayDegree {
   display:none;
