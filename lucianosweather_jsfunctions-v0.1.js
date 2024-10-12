@@ -105,7 +105,7 @@
 
 	}
 	function get_Daily(){
-		$.getJSON('https://api.weatherapi.com/v1/forecast.json?key=4cc8de0e01e84d058fc61338241210&q=Baltimore&days=5', function(data) {
+		$.getJSON('https://api.weatherapi.com/v1/forecast.json?key=4cc8de0e01e84d058fc61338241210&q=Baltimore&days=7', function(data) {
 			set_Daily(data);
 
 		});
