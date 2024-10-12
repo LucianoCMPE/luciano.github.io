@@ -124,7 +124,7 @@
 		var output = [a.slice(0, position), b, a.slice(position)].join('');
 		a = 'https://api.weatherapi.com/v1/forecast.json?key=4cc8de0e01e84d058fc61338241210&q=&days=7';
 		b = data;
-		position = 80;
+		position = 81;
 		var output2 = [a.slice(0, position), b, a.slice(position)].join('');
 		let element = document.getElementById("imageOfCity");
 		element.classList.toggle('fade');
