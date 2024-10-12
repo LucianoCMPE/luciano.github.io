@@ -105,7 +105,7 @@
 
 	}
 	function get_Daily(){
-		$.getJSON('https://api.weatherapi.com/v1/forecast.json?key=4cc8de0e01e84d058fc61338241210&q=Baltimore&days=7', function(data) {
+		$.getJSON('https://api.weatherapi.com/v1/forecast.json?key=4cc8de0e01e84d058fc61338241210&q=Baltimore&days=5', function(data) {
 			set_Daily(data);
 
 		});
@@ -120,7 +120,7 @@
 		document.getElementById("newLocation").textContent=data;
 		var a = 'https://api.weatherapi.com/v1/current.json?key=4cc8de0e01e84d058fc61338241210&q=';
 		var b = data;
-		var position = 79;
+		var position = 80;
 		var output = [a.slice(0, position), b, a.slice(position)].join('');
 		a = 'https://api.weatherapi.com/v1/forecast.json?key=4cc8de0e01e84d058fc61338241210&q=&days=7';
 		b = data;
