@@ -105,12 +105,12 @@
 
 	}
 	function get_Daily(){
-		$.getJSON('http://api.weatherapi.com/v1/forecast.json?key=4cc8de0e01e84d058fc61338241210&q=Baltimore&days=5', function(data) {
+		$.getJSON('https://api.weatherapi.com/v1/forecast.json?key=4cc8de0e01e84d058fc61338241210&q=Baltimore&days=5', function(data) {
 			set_Daily(data);
 
 		});
 
-		$.getJSON('http://api.weatherapi.com/v1/forecast.json?key=4cc8de0e01e84d058fc61338241210&q=Baltimore&days=7', function(data) {
+		$.getJSON('https://api.weatherapi.com/v1/forecast.json?key=4cc8de0e01e84d058fc61338241210&q=Baltimore&days=7', function(data) {
 			set_Weekly(data);
 		});
 		
@@ -118,11 +118,11 @@
 
 	function clickHandler(data){
 		document.getElementById("newLocation").textContent=data;
-		var a = 'http://api.weatherapi.com/v1/current.json?key=4cc8de0e01e84d058fc61338241210&q=';
+		var a = 'https://api.weatherapi.com/v1/current.json?key=4cc8de0e01e84d058fc61338241210&q=';
 		var b = data;
 		var position = 79;
 		var output = [a.slice(0, position), b, a.slice(position)].join('');
-		a = 'http://api.weatherapi.com/v1/forecast.json?key=4cc8de0e01e84d058fc61338241210&q=&days=7';
+		a = 'https://api.weatherapi.com/v1/forecast.json?key=4cc8de0e01e84d058fc61338241210&q=&days=7';
 		b = data;
 		position = 80;
 		var output2 = [a.slice(0, position), b, a.slice(position)].join('');
@@ -146,7 +146,7 @@
 		else if (data.includes("Chicago")) {
 			element.style.backgroundImage = "url('Test/chicago.jpg')";
 		}
-		else if (data.includes("LosAngeles")) {
+		else if (data.includes("LA")) {
 			element.style.backgroundImage = "url('Test/LA.jpg')";
 		}
 		else if (data.includes("Louisville")) {
