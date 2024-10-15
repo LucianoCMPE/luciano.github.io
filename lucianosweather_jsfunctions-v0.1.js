@@ -169,6 +169,9 @@
 		else if (data.includes("Towson")){
 			element.style.backgroundImage = "url('Test/towson.jpg')";
 		}
+		else if (data.includes("Vancouver")){
+			element.style.backgroundImage = "url('images/Vancouver.jpg')";
+		}
 		else if (data.includes("Washington")){
 			element.style.backgroundImage = "url('Test/DC.jpg')";
 		}
