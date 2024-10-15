@@ -1,6 +1,6 @@
 	$(window.onbeforeunload = function () {
   			window.scrollTo(0, 0);
-			  showSnow(0);
+			showSnow(0);
 		});	
 	$("#table5").hide().fadeIn(1000);
 	$("#table12").hide().fadeIn(1000);
