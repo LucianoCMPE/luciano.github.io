@@ -373,13 +373,14 @@
 			$('#cloudy6').attr("src", "images/icons/icon-5.svg");
 		}
 
-		$("#cloudy1").show("slow");
-		$("#cloudy2").show("slow");
-		$("#cloudy3").show("slow");
-		$("#cloudy4").show("slow");
-		$("#cloudy5").show("slow");
-		$("#cloudy6").show("slow");
-				//alert(JSON.stringify(main));
+		$("#cloudy1").fadeIn(1000);
+		$("#cloudy2").fadeIn(1000);
+		$("#cloudy3").fadeIn(1000);
+		$("#cloudy4").fadeIn(1000);
+		$("#cloudy5").fadeIn(1000);
+		$("#cloudy6").fadeIn(1000);
+
+		//alert(JSON.stringify(main));
 		//JSON.stringify(orig) == JSON.stringify(current) var changed = false
 		$("#tempz").fadeIn(1000).css("display","inline-block").html(Math.round(data.forecast.forecastday[1].day.maxtemp_f) + '<sup>o</sup>');
 		$("#tempz1").fadeIn(1000).html(Math.round(data.forecast.forecastday[1].day.mintemp_f) + '<sup>o</sup>');
