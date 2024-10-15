@@ -60,7 +60,7 @@
 		$(".degree > .highlowtemp").html(`<div class = "highlowtemp" style = "font-size:medium"> Feels like: ${Math.round(data.current.feelslike_f)}<sup>o</sup></div>`);
 
 	
-		// $(".forecast-icon > .forecasttext").html(`<div class = "forecasttext" style = "font-size:medium"> Humidity: ${data.current.humidity}%<br /> Wind Speed: ${Math.round(data.current.wind_mph)} mph</div>`);
+		$(".forecast-icon > .forecasttext").html(`<div class = "forecasttext" style = "font-size:medium"> Humidity: ${data.current.humidity}%<br /> Wind Speed: ${Math.round(data.current.wind_mph)} mph</div>`);
 		
 		if (Math.round(data.current.wind_mph) >= 10){
 			makeItLeaf();
