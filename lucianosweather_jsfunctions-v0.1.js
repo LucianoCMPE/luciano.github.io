@@ -53,12 +53,14 @@
 	  }
 	  
 	function set_Daily(data){
-
+		$('#cloudy').hide();
+		$('#displayDegree').hide();
+		$("#table12").fadeIn(1000);
 		$("#displayDegree").fadeIn(1000).css("display","inline-block").html(`${Math.round(data.current.temp_f)}<sup>o</sup>`);
-
 		$(".degree > .highlowtemp").html(`<div class = "highlowtemp" style = "font-size:medium"> Feels like: ${Math.round(data.current.feelslike_f)}<sup>o</sup></div>`);
 
-		$(".forecast-icon > .forecasttext").html(`<div class = "forecasttext" style = "font-size:medium"> Humidity: ${data.current.humidity}%<br /> Wind Speed: ${Math.round(data.current.wind_mph)} mph</div>`);
+	
+		// $(".forecast-icon > .forecasttext").html(`<div class = "forecasttext" style = "font-size:medium"> Humidity: ${data.current.humidity}%<br /> Wind Speed: ${Math.round(data.current.wind_mph)} mph</div>`);
 		
 		if (Math.round(data.current.wind_mph) >= 10){
 			makeItLeaf();
@@ -124,7 +126,7 @@
 		var output = [a.slice(0, position), b, a.slice(position)].join('');
 		a = 'https://api.weatherapi.com/v1/forecast.json?key=4cc8de0e01e84d058fc61338241210&q=&days=7';
 		b = data;
-		position = 81;
+		position = 81 ;
 		var output2 = [a.slice(0, position), b, a.slice(position)].join('');
 		let element = document.getElementById("imageOfCity");
 		element.classList.toggle('fade');
@@ -186,6 +188,12 @@
 // }
 	function set_Weekly(data){
 
+		$("#cloudy1").hide();
+		$("#cloudy2").hide();
+		$("#cloudy3").hide();
+		$("#cloudy4").hide();
+		$("#cloudy5").hide();
+		$("#cloudy6").hide();
 		//FIRST DAY FORECAST (GENERATES ICON FOR DAY 1)
 		var currentWeatherCondition = data.forecast.forecastday[1].day.condition.code;
 
